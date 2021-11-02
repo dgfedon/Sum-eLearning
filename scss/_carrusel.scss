@@ -1,0 +1,34 @@
+.metodologia{
+    background-color: gray;
+}
+.testimonios {
+    background-color: grey;
+}
+.cursos {
+    background-color: white;
+}
+.card{
+    border-radius: 5%;
+}
+.card-img-top{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+.owl-prev{
+    left: -30px;
+}
+.owl-next{
+    right: -30px;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 90px;
+}
+.owl-prev span, .owl-next span {
+    font-size: 80px;
+    color: black;
+}
+.owl-theme , .owl-nav[class*="owl-"]:hover{
+    background: transparent !important ;
+}
