@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62,5%;
+}
+
+// Contenedor padre
+.contenedor--fluid {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+// Padding generales
+.padding-x {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.padding-y {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+// SECCIONES
+#header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#carrusel--encabezado {
+    margin-top: 100px;
+    height: 760px;
+}
+
+#beneficios {
+    height: 840px;
+    @include flex-colum-jc-ai-center;
+}
+
+#metodologia {
+    height: 860px;
+    @include flex-colum-jc-ai-center;
+}
+
+#testimonios {
+    height: 780px;
+    @include flex-colum-jc-ai-center;
+}
+
+#cursos {
+    height: 1380px;
+    @include flex-colum-jc-ai-center;
+}
+
+#networking {
+    height: 410px;
+    @include flex-colum-jc-ai-center;
+}
+
+#formulario {
+    height: 990px;
+    @include flex-colum-jc-ai-center;
+}
+
+#footer {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copy {
+    height: 100px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Encabezados secciones
+.encabezado--titulo {
+    font-size: 50px;
+    text-align: center;
+}
+.encabezado--text {
+    font-size: 25px;
+    margin-top: 40px;
+    width: 730px;
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+// CARRUSEL
+// .metodologia{
+//     background-color: gray;
+// }
+// .testimonios {
+//     background-color: grey;
+// }
+.cursos {
+    background-color: white;
+}
+// .card{
+//     border-radius: 5%;
+// }
+.card-img-top{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+.owl-prev{
+    left: -30px;
+}
+.owl-next{
+    right: -30px;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 150px;
+}
+.owl-prev span, .owl-next span {
+    font-size: 80px;
+    color: gainsboro;
+}
+.owl-theme , .owl-nav[class*="owl-"]:hover{
+    background: transparent !important ;
+}
+
+
+// GLOBO COMENTARIO
+.comentarios {
+    width: 280px;
+    .comentario {
+        width: 100%;
+        p {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+.burbuja {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+    
+        bottom: -15px;
+        margin-left: 110px;
+    
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    
+        border-top: 15px solid white;
+    }
+}
+
+
+// ICONOS
+.icon__permanent--wa {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    border: none;
+    z-index: 10;
+    /* background-color: #25d366;
+    border-radius: 50%;
+    line-height: 0px; */
+    i {
+        font-size: 70px;
+        color: #25d366;
+        text-align: center;
+    }
+}
+
+.icon--networking {
+    font-size: 80px;
+    color: white;
+}
+
+.icon--foo {
+    font-size: 45px;
+}
