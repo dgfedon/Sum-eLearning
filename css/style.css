@@ -52,7 +52,7 @@
 .icon__permanent--wa {
   position: fixed;
   right: 20px;
-  bottom: 50px;
+  bottom: 85px;
   border: none;
   z-index: 10;
   /* background-color: #25d366;
@@ -95,8 +95,7 @@ html {
   justify-content: space-around; }
 
 #carrusel--encabezado {
-  margin-top: 100px;
-  height: 760px; }
+  margin-top: 100px; }
 
 #beneficios {
   height: 840px;
