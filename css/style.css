@@ -92,7 +92,8 @@ html {
 #header {
   height: 100px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: white; }
 
 #carrusel--encabezado {
   margin-top: 100px; }
@@ -146,7 +147,7 @@ html {
   align-items: center; }
 
 #copy {
-  height: 100px;
+  height: 60px;
   padding: 30px 40px;
   display: flex;
   justify-content: center;

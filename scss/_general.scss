@@ -28,6 +28,7 @@ html {
     height: 100px;
     display: flex;
     justify-content: space-around;
+    background-color: white;
 }
 
 #carrusel--encabezado {
@@ -72,7 +73,7 @@ html {
 }
 
 #copy {
-    height: 100px;
+    height: 60px;
     padding: 30px 40px;
     display: flex;
     justify-content: center;

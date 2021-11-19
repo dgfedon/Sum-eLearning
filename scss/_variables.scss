@@ -1,3 +1,12 @@
+// COLORS
+$primaryBlue: #000035;
+$primaryOrange: #FE4A00;
+$secondaryYellow: #FFB62A;
+
+// FONT
+$lato: 'Lato', sans-serif;
+
+// Variables
 @mixin flex-colum-jc-ai-center {
     display: flex;
     flex-direction: column;
