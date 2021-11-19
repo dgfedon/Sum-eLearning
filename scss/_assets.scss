@@ -1,10 +1,4 @@
 // CARRUSEL
-// .metodologia{
-//     background-color: gray;
-// }
-// .testimonios {
-//     background-color: grey;
-// }
 .cursos {
     background-color: white;
 }
@@ -74,17 +68,9 @@
 .icon__permanent--wa {
     position: fixed;
     right: 20px;
-    bottom: 85px;
+    bottom: 65px;
     border: none;
     z-index: 10;
-    /* background-color: #25d366;
-    border-radius: 50%;
-    line-height: 0px; */
-    i {
-        font-size: 70px;
-        color: #25d366;
-        text-align: center;
-    }
 }
 
 .icon--networking {
@@ -94,4 +80,18 @@
 
 .icon--foo {
     font-size: 45px;
+}
+
+// IMAGEN FONDO
+.methodology--img {
+    background-image: url("../assets/img/metodologia_sum_elearnig.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form--img {
+    background-image: url("../assets/img/form_sum_elearning.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

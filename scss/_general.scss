@@ -42,7 +42,10 @@ html {
 
 #metodologia {
     height: 860px;
-    @include flex-colum-jc-ai-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 160px;
 }
 
 #testimonios {

@@ -52,16 +52,9 @@
 .icon__permanent--wa {
   position: fixed;
   right: 20px;
-  bottom: 85px;
+  bottom: 65px;
   border: none;
-  z-index: 10;
-  /* background-color: #25d366;
-    border-radius: 50%;
-    line-height: 0px; */ }
-  .icon__permanent--wa i {
-    font-size: 70px;
-    color: #25d366;
-    text-align: center; }
+  z-index: 10; }
 
 .icon--networking {
   font-size: 80px;
@@ -69,6 +62,18 @@
 
 .icon--foo {
   font-size: 45px; }
+
+.methodology--img {
+  background-image: url("../assets/img/metodologia_sum_elearnig.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.form--img {
+  background-image: url("../assets/img/form_sum_elearning.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 * {
   margin: 0;
@@ -110,7 +115,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  padding-left: 160px; }
 
 #testimonios {
   height: 780px;
