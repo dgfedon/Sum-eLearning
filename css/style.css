@@ -1,3 +1,69 @@
+@media only screen and (min-width: 855px) {
+  .header--nav {
+    color: #000035;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 10px; }
+  .header--training {
+    color: #FE4A00;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 10px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 60px; }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 40px;
+    text-align: start; }
+  .encabezado--title {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #000035; }
+  .encabezado--subtitle {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 25px;
+    margin-top: 40px;
+    width: 730px;
+    text-align: center;
+    color: #000035; }
+  .encabezado--methodology {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    color: #000035; }
+  .btn--text {
+    font-family: "Lato", sans-serif;
+    font-size: 22px; }
+  .networking--text {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 1050px;
+    color: #F8F8F8;
+    margin-bottom: 40px; }
+  .form__background--text h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 38px;
+    color: #FE4A00;
+    text-align: center; }
+  .form__background--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #000035;
+    text-align: center; }
+  .foo--text {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    color: #000035; }
+  .copy--text {
+    font-size: 14px;
+    text-align: center; } }
+
 .cursos {
   background-color: white; }
 
@@ -7,14 +73,14 @@
   object-fit: cover; }
 
 .owl-prev {
-  left: -30px; }
+  left: -20px; }
 
 .owl-next {
-  right: -30px; }
+  right: -50px; }
 
 .owl-prev, .owl-next {
   position: absolute;
-  top: 150px; }
+  top: 200px; }
 
 .owl-prev span, .owl-next span {
   font-size: 80px;
@@ -23,147 +89,289 @@
 .owl-theme, .owl-nav[class*="owl-"]:hover {
   background: transparent !important; }
 
-.comentarios {
-  width: 280px; }
-  .comentarios .comentario {
-    width: 100%; }
-    .comentarios .comentario p {
-      margin: 0 0 10px 0; }
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #869791;
+  opacity: 0; }
 
-.burbuja {
-  position: relative;
-  background-color: white;
-  padding: 20px;
-  color: black;
-  border-radius: 5px;
-  margin-bottom: 25px; }
-  .burbuja::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -15px;
-    margin-left: 110px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid white; }
+@media only screen and (min-width: 855px) {
+  .hero__group {
+    height: 700px; }
+    .hero__group div {
+      margin: 20px 0px 20px 210px;
+      width: 640px; }
+  .comments {
+    width: 280px; }
+    .comments .comment {
+      width: 100%; }
+      .comments .comment p {
+        margin: 0 0 10px 0; }
+  .bubble {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 25px; }
+    .bubble::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -15px;
+      margin-left: 110px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid white; }
+  .icon__permanent--wa {
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+    border: none;
+    z-index: 10; }
+  .icon--networking {
+    font-size: 80px;
+    color: white; }
+  .benefits__fund--colors {
+    background-image: url("../assets/img/beneficios_sum_elearning.png");
+    background-position: top;
+    background-repeat: no-repeat; }
+  .methodology__fund--img {
+    background-image: url("../assets/img/metodologia_sum_elearnig.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .testimony__fund--colors {
+    background: linear-gradient(180deg, #FFB62A 0%, rgba(255, 200, 177, 0) 100%);
+    opacity: 0.8; }
+  .form__fund--img {
+    background-image: url("../assets/img/form_sum_elearning.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
+  .form__background {
+    min-width: 705px;
+    min-height: 565px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px; }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    width: 220px;
+    height: 60px;
+    color: #000035; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    width: 220px;
+    height: 60px;
+    color: #F8F8F8; }
+  .methodology--btn {
+    background-color: #000035;
+    border: none;
+    width: 255px;
+    height: 60px;
+    color: #F8F8F8;
+    margin-top: 40px; }
+  .form__btn--submit {
+    background-color: #FF792E;
+    border: none;
+    width: 120px;
+    height: 38px;
+    padding: 8px 12px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: #000035; } }
 
-.icon__permanent--wa {
-  position: fixed;
-  right: 20px;
-  bottom: 65px;
-  border: none;
-  z-index: 10; }
-
-.icon--networking {
-  font-size: 80px;
-  color: white; }
-
-.icon--foo {
-  font-size: 45px; }
-
-.methodology--img {
-  background-image: url("../assets/img/metodologia_sum_elearnig.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.form--img {
-  background-image: url("../assets/img/form_sum_elearning.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+@media only screen and (min-width: 855px) {
+  .benefits {
+    margin-top: 80px; }
+    .benefits .benefits--group {
+      border: none;
+      margin: 10px 30px; }
+      .benefits .benefits--group p {
+        margin-top: 15px;
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        color: #FE4A00; }
+      .benefits .benefits--group span {
+        min-width: 340px;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 18px; }
+  .methodology {
+    margin-top: 40px; }
+    .methodology .methodology--group {
+      margin-top: 20px; }
+      .methodology .methodology--group h3 {
+        font-family: "Lato", sans-serif;
+        font-size: 35px;
+        color: #FE4A00; }
+      .methodology .methodology--group p {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 25px;
+        width: 450px; }
+  .form--group {
+    margin-top: 40px;
+    min-width: 560px;
+    min-height: 360px;
+    padding: 0px 40px; }
+    .form--group label {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      color: #000035;
+      margin-bottom: 0px;
+      margin-left: 15px; }
+    .form--group input, .form--group textarea {
+      display: block;
+      width: 100%;
+      padding: 5px 0px 5px 20px;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 15px;
+      color: #C0C0C0;
+      background-color: #ffffff;
+      border: 1px solid #000035;
+      border-radius: 6px;
+      margin-bottom: 10px; } }
 
 * {
   margin: 0;
   padding: 0; }
 
-html {
-  font-size: 62,5%; }
-
 .contenedor--fluid {
   width: 100%;
   overflow-x: hidden; }
 
-.padding-x {
-  padding-right: 40px;
-  padding-left: 40px; }
+@media only screen and (min-width: 855px) {
+  .padding-x {
+    padding-right: 40px;
+    padding-left: 40px; }
+  .padding-y {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+  #header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white; }
+  #carrusel--encabezado {
+    margin-top: 100px; }
+  #benefits {
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #methodology {
+    min-height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px; }
+  #testimony {
+    min-height: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #courses {
+    min-height: 1380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #institutions {
+    min-height: 850px;
+    background-color: #B4B3B3; }
+  #networking {
+    min-height: 410px;
+    background-color: #32325C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #form {
+    min-height: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #footer {
+    min-height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #copy {
+    min-height: 60px;
+    background-color: #000018;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
-.padding-y {
-  padding-top: 80px;
-  padding-bottom: 80px; }
-
-#header {
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  background-color: white; }
-
-#carrusel--encabezado {
-  margin-top: 100px; }
-
-#beneficios {
-  height: 840px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#metodologia {
-  height: 860px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 160px; }
-
-#testimonios {
-  height: 780px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#cursos {
-  height: 1380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#networking {
-  height: 410px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#formulario {
-  height: 990px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#footer {
-  height: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-#copy {
-  height: 60px;
-  padding: 30px 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.encabezado--titulo {
-  font-size: 50px;
-  text-align: center; }
-
-.encabezado--text {
-  font-size: 25px;
-  margin-top: 40px;
-  width: 730px;
-  text-align: center; }
+@media only screen and (min-width: 0px) and (max-width: 854px) {
+  .padding-x {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .padding-y {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white; }
+  #carrusel--encabezado {
+    margin-top: 100px; }
+  #benefits {
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #methodology {
+    min-height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px; }
+  #testimony {
+    min-height: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #courses {
+    min-height: 1380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #institutions {
+    min-height: 850px;
+    background-color: #B4B3B3; }
+  #networking {
+    min-height: 410px;
+    background-color: #32325C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #form {
+    min-height: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #footer {
+    min-height: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #copy {
+    min-height: 60px;
+    background-color: #000018;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }

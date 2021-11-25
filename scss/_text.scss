@@ -1,0 +1,110 @@
+// Vista desktop
+@media only screen and (min-width:855px) {
+    // Enlaces
+    .header--nav {
+        color: $primaryBlue;
+        font-family: $lato;
+        font-size: 20px;
+        display: block;
+        padding: 0.5rem 10px;
+    }
+    .header--training {
+        color: $primaryOrange;
+        font-family: $lato;
+        font-size: 20px;
+        display: block;
+        padding: 0.5rem 10px;
+    }
+
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 60px;
+        }
+        p {
+            font-family: $openSans;
+            font-size: 40px;
+            text-align: start;
+        }
+    }
+
+    // Encabezado title
+    .encabezado--title {
+        font-family: $lato;
+        font-size: 50px;
+        text-align: center;
+        color: $primaryBlue;
+    }
+
+    // Encabezado subtitle
+    .encabezado--subtitle {
+        font-family: $openSans;
+        font-size: 25px;
+        margin-top: 40px;
+        width: 730px;
+        text-align: center;
+        color: $primaryBlue;
+    }
+
+    // Encabezado methodology
+    .encabezado--methodology {
+        font-family: $lato;
+        font-size: 50px;
+        color: $primaryBlue;
+    }
+
+    // BTN
+    .btn--text {
+        font-family: $lato;
+        font-size: 22px;
+    }
+
+    // Texto networking
+    .networking--text {
+        font-family: $lato;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 1050px;
+        color: #F8F8F8;
+        margin-bottom: 40px;
+    }
+
+    // Text encabezado form
+    .form__background--text {
+        h3 {
+            font-family: $lato;
+            font-size: 38px;
+            color: $primaryOrange;
+            text-align: center;
+        }
+        p {
+            font-family: $openSans;
+            font-size: 20px;
+            margin-top: 30px;
+            color: $primaryBlue;
+            text-align: center;
+        }
+    }
+
+    // Texto footer
+    .foo--text {
+        font-family: $lato;
+        font-size: 22px;
+        color: $primaryBlue;
+    }
+
+    // Texto copy
+    .copy--text {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+
+// Vista mobile
+// @media only screen and (min-width:0px) and (max-width:854px) {
+
+// }

@@ -1,0 +1,74 @@
+// Vista desktop
+@media only screen and (min-width:855px) {
+    // Benefits
+    .benefits {
+        margin-top: 80px;
+        .benefits--group {
+            border: none;
+            margin: 10px 30px;
+            p {
+                margin-top: 15px;
+                font-family: $lato;
+                font-size: 30px;
+                color: $primaryOrange;
+            }
+            span {
+                min-width: 340px;
+                font-family: $openSans;
+                font-size: 18px;
+            }
+        }
+    }
+
+    // Methodology
+    .methodology {
+        margin-top: 40px;
+        .methodology--group {
+            margin-top: 20px;
+            h3 {
+                font-family: $lato;
+                font-size: 35px;
+                color: $primaryOrange;
+            }
+            p {
+                font-family: $openSans;
+                font-size: 25px;
+                width: 450px;
+            }
+        }
+    }
+
+    // Form
+    .form--group {
+        margin-top: 40px;
+        min-width: 560px;
+        min-height: 360px;
+        padding: 0px 40px;
+        label {
+            font-family: $lato;
+            font-size: 15px;
+            color: $primaryBlue;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            padding: 5px 0px 5px 20px;
+            font-family: $openSans;
+            font-size: 15px;
+            color: #C0C0C0;
+            background-color: #ffffff;
+            border: 1px solid $primaryBlue;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+// Vista mobile
+// @media only screen and (min-width:0px) and (max-width:854px) {
+
+// }

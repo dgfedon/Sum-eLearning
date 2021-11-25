@@ -18,7 +18,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Lato: ital, wght @ 0,400; 0,700; 0,900; 1,400 & display = swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2? family = Lato: ital, wght @ 0,100; 0,300; 1,100 & family = Open + Sans + Condensed: wght @ 300 & display = swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
 
         <!-- Apertura cabecera -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-sm-12">
 
                 <!-- Apertura header -->
                 <header class="navbar navbar-expand-lg navbar-light fixed-top" id="header">
@@ -53,20 +53,20 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav align-items-center" style="font-size: 22px;">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="header--nav" href="#">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#beneficios">¿Quiénes somos?</a>
+                                    <a class="header--nav" href="#benefits">¿Quiénes somos?</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#cursos">Cursos y talleres</a>
+                                    <a class="header--nav" href="#courses">Cursos y talleres</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Instituciones</a>
+                                    <a class="header--nav" href="#institutions">Instituciones</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#formulario" style="color: #FE4A00;">¡Quiero capacitarme!</a>
+                                    <a class="header--training" href="#form" style="color: #FE4A00;">¡Quiero capacitarme!</a>
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +94,7 @@
 
         <!-- Apertura hero -->
         <div class="row">
-            <div class="col-lg-12" id="carrusel--encabezado">
+            <div class="col-lg-12 col-sm-12" id="carrusel--encabezado">
                 <section id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -104,16 +104,17 @@
                     <div class="carousel-inner">
                         <!-- IMAGEN -->
                         <div class="carousel-item active">
-                            <img src="assets/img/slide_sum_elearning.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <div class="d-flex flex-column justify-content-center align-items-center" style="height: 700px;">
-                                    <div class="d-flex flex-column align-items-start" style="margin: 20px 0px 20px 210px; width: 640px;">
-                                        <h5 style="font-size: 60px;">Capacitación docente</h5>
-                                        <p style="font-size: 40px; text-align: start;">Formamos a educadores de forma didáctica y profesional.</p>
+                            <!-- <img src="assets/img/slide_sum_elearning.jpg" class="d-block" alt="..."> -->
+                            <div></div>
+                            <div class="carousel-caption d-md-block">
+                                <div class="d-flex flex-column justify-content-center align-items-center hero__group">
+                                    <div class="d-flex flex-column align-items-start hero__group--text">
+                                        <h5>Capacitación docente</h5>
+                                        <p>Formamos a educadores de forma didáctica y profesional.</p>
                                     </div>
-                                    <div class="d-flex justify-content-center" style="margin: 20px 0px 20px 210px; width: 640px;">
-                                        <a href="#" class="btn btn-outline-dark rounded-pill mx-4">VER CURSOS</a>
-                                        <a href="#" class="btn btn-dark rounded-pill">INSCRIBIRME</a>
+                                    <div class="d-flex justify-content-center">
+                                        <button onclick="location.href='#courses'" class="carousel__btn--courses btn--text rounded-pill mx-4">VER CURSOS</button>
+                                        <button onclick="location.href='#form'" class="carousel__btn--inscription btn--text rounded-pill mx-4">INSCRIBIRME</button>
                                     </div>
                                 </div>
                             </div>
@@ -150,100 +151,100 @@
 
 
 
-        <!-- Apertura beneficios -->
+        <!-- Apertura benefits -->
         <div class="row">
             <div class="col-lg-12">
-                <section class="padding-y padding-x" id="beneficios">
+                <section class="padding-y padding-x benefits__fund--colors" id="benefits">
 
                     <div>
-                        <h2 class="encabezado--titulo">Estudiar en Sum e-Learning</h2>
-                        <p class="encabezado--text">En Sum e-Learning encontrarás la mejor variedad y calidad de cursos para capacitación docente del mercado.</p>
+                        <h2 class="encabezado--title">Estudiar en Sum e-Learning</h2>
+                        <p class="encabezado--subtitle">En Sum e-Learning encontrarás la mejor variedad y calidad de cursos para capacitación docente del mercado.</p>
                     </div>
 
-                    <div class="d-flex justify-content-center" style="margin-top: 80px;">
+                    <div class="d-flex justify-content-center benefits">
 
                         <!-- Beneficio 1 -->
-                        <div class="card align-items-center" style="border: none; margin: 10px 30px;">
+                        <div class="card align-items-center benefits--group">
                             <img src="assets/img/img_libertad_sum_elearning.png" alt="..." width="160" height="160">
-                            <p style="margin-top: 1rem; font-size: 30px;">Libertad</p>
-                            <span class="text-center" style="width: 350px; font-size: 18px;">Nuestros cursos y talleres se encuentran disponibles en cualquier momento y lugar para que estudies a tu tiempo.</span>
+                            <p>Libertad</p>
+                            <span class="text-center">Nuestros cursos y talleres se encuentran disponibles en cualquier momento y lugar para que estudies a tu tiempo.</span>
                         </div>
 
                         <!-- Beneficio 2 -->
-                        <div class="card align-items-center" style="border: none; margin: 10px 30px;">
+                        <div class="card align-items-center benefits--group">
                             <img src="assets/img/img_certificacion_sum_elearning.png" alt="..." width="160" height="160">
-                            <p style="margin-top: 1rem; font-size: 30px;">Certificación</p>
-                            <span class="text-center" style="width: 350px; font-size: 18px;">Ofrecemos certificaciones oficiales una vez entregados los profectos finales de tu curso de capacitación docente.</span>
+                            <p>Certificación</p>
+                            <span class="text-center">Ofrecemos certificaciones oficiales una vez entregados los profectos finales de tu curso de capacitación docente.</span>
                         </div>
 
                         <!-- Beneficio 3 -->
-                        <div class="card align-items-center" style="border: none; margin: 10px 30px;">
+                        <div class="card align-items-center benefits--group">
                             <img src="assets/img/img_institucionalidad_sum_elearning.png" alt="..." width="160" height="160">
-                            <p style="margin-top: 1rem; font-size: 30px;">Institucionalidad</p>
-                            <span class="text-center" style="width: 350px; font-size: 18px;">Beneficios exclusivos para instituciones educativas que deseen contratar nuestros cursos para su staff docente.</span>
+                            <p>Institucionalidad</p>
+                            <span class="text-center">Beneficios exclusivos para instituciones educativas que deseen contratar nuestros cursos para su staff docente.</span>
                         </div>
 
                     </div>
                 </section>
             </div>
         </div>
-        <!-- Cierre beneficios -->
+        <!-- Cierre benefits -->
 
 
 
-        <!-- Apertura metodología -->
+        <!-- Apertura methodology -->
         <div class="row">
             <div class="col-lg-12">
-                <section class="padding-y padding-x methodology--img" id="metodologia">
+                <section class="padding-y padding-x methodology__fund--img" id="methodology">
 
-                    <h2 style="font-size: 60px;">Metodología de estudio</h2>
+                    <h2 class="encabezado--methodology">Metodología de estudio</h2>
 
-                    <div style="margin-top: 40px;">
+                    <div class="methodology">
 
                         <!-- Metodología 1 -->
-                        <div style="margin-top: 20px;">
-                            <h3 style="font-size: 35px;">Estudiá a tu ritmo</h3>
-                            <p style="font-size: 25px; width: 450px;">¡Adquiere nuestros cursos y talles para estudiarlos en tu tiempo libre!</p>
+                        <div class="methodology--group">
+                            <h3>Estudiá a tu ritmo</h3>
+                            <p>¡Adquiere nuestros cursos y talles para estudiarlos en tu tiempo libre!</p>
                         </div>
 
                         <!-- Metodología 2 -->
-                        <div style="margin-top: 20px;">
-                            <h3 style="font-size: 35px;">Material descargable</h3>
-                            <p style="font-size: 25px; width: 450px;">Archivos PDF disponibles para descargar y tenerlos siempre a mano.</p>
+                        <div class="methodology--group">
+                            <h3>Material descargable</h3>
+                            <p>Archivos PDF disponibles para descargar y tenerlos siempre a mano.</p>
                         </div>
 
                         <!-- Metodología 3 -->
-                        <div style="margin-top: 20px;">
-                            <h3 style="font-size: 35px;">Proyecto final</h3>
-                            <p style="font-size: 25px; width: 450px;">Evaluamos tu desempeño para brindarte certificados oficiales.</p>
+                        <div class="methodology--group">
+                            <h3>Proyecto final</h3>
+                            <p>Evaluamos tu desempeño para brindarte certificados oficiales.</p>
                         </div>
 
-                        <a href="#" class="btn btn-dark rounded-pill" style="margin-top: 40px;">COMENZAR AHORA</a>
+                        <button onclick="location.href='#form'" class="methodology--btn btn--text rounded-pill">COMENZAR AHORA</button>
                     </div>
                 </section>
             </div>
         </div>
-        <!-- Cierre metodología -->
+        <!-- Cierre methodology -->
 
 
 
-        <!-- Apertura testimonios -->
+        <!-- Apertura testimony -->
         <div class="row">
             <div class="col-lg-12">
 
-                <section class="testimonios padding-y padding-x" id="testimonios" style="background-color: #B4B3B3;">
+                <section class="testimony__fund--colors padding-y padding-x" id="testimony">
 
                     <div>
-                        <h2 class="encabezado--titulo">Nuestros estudiantes</h2>
-                        <p class="encabezado--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <h2 class="encabezado--title">Nuestros estudiantes</h2>
+                        <p class="encabezado--subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
 
                     <div class="container d-flex flex-row justify-content-center" style="margin-top: 60px;">
 
                         <!-- Testimonio 1 -->
                         <div class="card align-items-center bg-transparent" style="width: 18rem; margin: 0px 10px; padding-top: 20px; border: none;">
-                            <div class="comentarios">
-                                <div class="comentario burbuja">
+                            <div class="comments">
+                                <div class="comment bubble">
                                     <h5 class="text-center" style="font-size: 30px;">Loren ipsum</h5>
                                     <p class="text-center" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
@@ -257,8 +258,8 @@
 
                         <!-- Testimonio 2 -->
                         <div class="card align-items-center bg-transparent" style="width: 18rem; margin: 0px 10px; padding-top: 20px; border: none;">
-                            <div class="comentarios">
-                                <div class="comentario burbuja">
+                            <div class="comments">
+                                <div class="comment bubble">
                                     <h5 class="text-center" style="font-size: 30px;">Loren ipsum</h5>
                                     <p class="text-center" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
@@ -272,8 +273,8 @@
 
                         <!-- Testimonio 3 -->
                         <div class="card align-items-center bg-transparent" style="width: 18rem; margin: 0px 10px; padding-top: 20px; border: none;">
-                            <div class="comentarios">
-                                <div class="comentario burbuja">
+                            <div class="comments">
+                                <div class="comment bubble">
                                     <h5 class="text-center" style="font-size: 30px;">Loren ipsum</h5>
                                     <p class="text-center" style="font-size: 18px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                                 </div>
@@ -289,18 +290,18 @@
                 </section>
             </div>
         </div>
-        <!-- Cierre testimonios -->
+        <!-- Cierre testimony -->
 
 
 
-        <!-- Apertura carrusel cursos -->
+        <!-- Apertura carrusel courses -->
         <div class="row">
             <div class="col-lg-12">
-                <section class="cursos bg-light padding-y padding-x" id="cursos" style="height: 1380px;">
+                <section class="cursos bg-light padding-y padding-x" id="courses" style="height: 1380px;">
 
                     <div>
-                        <h2 class="encabezado--titulo">Cursos y talleres virtuales</h2>
-                        <p class="encabezado--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h2 class="encabezado--title">Cursos y talleres virtuales</h2>
+                        <p class="encabezado--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
 
                     <div class="container mt-5">
@@ -412,30 +413,30 @@
                 </section>
             </div>
         </div>
-        <!-- Cierre carrusel cursos -->
+        <!-- Cierre carrusel courses -->
 
 
 
-        <!-- Apertura img final -->
+        <!-- Apertura institutions -->
         <div class="row">
             <div class="col-lg-12">
-                <div style="background-color: #B4B3B3; height: 850px;">
+                <section id="institutions">
                     <p class="text-center text-white pt-5" style="opacity: 0.7;">INSTITUCIONES</p>
-                </div>
+                </section>
             </div>
         </div>
-        <!-- Cierre img final -->
+        <!-- Cierre institutions -->
 
 
 
         <!-- Apertura networking -->
         <div class="row">
-            <div class="col-lg-12">
-                <section class="padding-y padding-x" id="networking" style="background-color: #32325C;">
+            <div class="col-lg-12 col-sm-12">
+                <section class="padding-y padding-x" id="networking">
 
-                    <h4 class="encabezado--titulo text-white">¡Seguinos en nuestras redes para enterarte de todas las novedades antes que nadie!</h4>
+                    <h4 class="networking--text">¡Seguinos en nuestras redes para enterarte de todas las novedades antes que nadie!</h4>
 
-                    <ul class="nav d-flex justify-content-center" style="margin-top: 20px;">
+                    <ul class="nav d-flex justify-content-center">
                         <li class="nav-item">
                             <a target="_blank" href="https://www.facebook.com/" class="nav-link icon--networking">
                                 <i class="bi bi-facebook"></i>
@@ -455,49 +456,49 @@
 
 
 
-        <!-- Apertura formulario -->
+        <!-- Apertura form -->
         <div class="row">
-            <div class="col-lg-12">
-                <section class="padding-y padding-x form--img" id="formulario">
+            <div class="col-lg-12 col-sm-12">
+                <section class="padding-y padding-x form__fund--img" id="form">
 
-                    <div>
-                        <h3 class="encabezado--titulo">¡Quiero ser alumno!</h3>
-                        <p class="encabezado--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="form__background form__background--text">
+                        <h3>¡Quiero ser alumno!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        <!-- Apertura formulario -->
+                        <form action="" class="form--group">
+                            <label for="">Nombre</label>
+                            <input type="text" id="formGroupExampleInput" placeholder="Ejemplo: Ana María Rosales">
+                            <label for="">Email</label>
+                            <input type="email" id="formGroupExampleInput" placeholder="Ejemplo: amrosales@email.com">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label for="inputCity">País</label>
+                                    <input type="text" id="inputCity" placeholder="Ej: Argentina">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity">Teléfono</label>
+                                    <input type="tel" id="inputCity" placeholder="Ej: (011) 1511223344">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea id="exampleFormControlTextarea1" rows="3" placeholder="¡Cuéntanos qué necesitas! En breve nos contactaremos contigo."></textarea>
+                            </div>
+                            <div class="col-auto d-flex justify-content-center">
+                                <button type="submit" class="form__btn--submit rounded-pill">ENVIAR</button>
+                        </form>
+                        <!-- Cierre formulario -->
                     </div>
 
-                    <!-- Apertura formulario -->
-                    <form action="" style="margin-top: 60px; width: 700px; height: 450px; font-size: 18px;">
-                        <label for="">Nombre</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo: Ana María Rosales">
-                        <label for="">Email</label>
-                        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo: amrosales@email.com">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">País</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Ej: Argentina">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">Teléfono</label>
-                                <input type="tel" class="form-control" id="inputCity" placeholder="Ej: (011) 1511223344">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¡Cuéntanos qué necesitas! En breve nos contactaremos contigo."></textarea>
-                        </div>
-                        <div class="col-auto d-flex justify-content-center">
-                            <button type="submit" class="btn btn-dark rounded-pill px-4">ENVIAR</button>
-                        </div>
-                    </form>
-                    <!-- Cierre formulario -->
                 </section>
             </div>
         </div>
-        <!-- Cierre formulario -->
+        <!-- Cierre form -->
 
 
 
-        <!-- Apertura pie -->
+        <!-- Apertura footer -->
         <div class="row">
             <div class="col-lg-12">
                 <footer class="padding-y padding-x" id="footer">
@@ -510,19 +511,19 @@
                     <!-- Contactos -->
                     <ul class="nav align-items-center">
                         <li class="nav-item">
-                            <span class="nav-link" style="font-size: 22px;">11 XXXX XXXX</span>
+                            <span class="nav-link foo--text">11 XXXX XXXX</span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav-link" style="font-size: 22px;">email@gmail.com</span>
+                            <span class="nav-link foo--text">email@gmail.com</span>
                         </li>
                         <li class="nav-item">
-                            <a target="_blank" href="https://www.instagram.com/" class="nav-link icon--foo">
-                                <i class="bi bi-instagram"></i>
+                            <a target="_blank" href="https://www.instagram.com/" class="nav-link">
+                                <img src="assets/img/vector_facebook.svg" alt="..." height="40" width="40">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_blank" href="https://www.facebook.com/" class="nav-link icon--foo">
-                                <i class="bi bi-facebook"></i>
+                            <a target="_blank" href="https://www.facebook.com/" class="nav-link">
+                                <img src="assets/img/vector_instagram.svg" alt="..." height="40" width="40">
                             </a>
                         </li>
                     </ul>
@@ -530,16 +531,16 @@
                 </footer>
             </div>
         </div>
-        <!-- Cierre pie -->
+        <!-- Cierre footer -->
 
 
 
         <!-- Apertura copy -->
         <div class="row">
-            <div class="col-lg-12">
-                <section id="copy" style="background-color: #000018;">
+            <div class="col-lg-12 col-sm-12">
+                <section id="copy">
                     <div>
-                        <span class="text-white" style="font-size: 14px;">Copyright&copy; Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        <span class="text-white copy--text">Copyright&copy; Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </div>
                 </section>
             </div>

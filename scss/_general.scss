@@ -3,94 +3,168 @@
 	padding: 0;
 }
 
-html {
-	font-size: 62,5%;
-}
-
 // Contenedor padre
 .contenedor--fluid {
     width: 100%;
     overflow-x: hidden;
 }
 
-// Padding generales
-.padding-x {
-    padding-right: 40px;
-    padding-left: 40px;
-}
-.padding-y {
-    padding-top: 80px;
-    padding-bottom: 80px;
+// Vista desktop
+@media only screen and (min-width:855px) {
+    // Padding generales
+    .padding-x {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .padding-y {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    // SECCIONES
+    #header {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #carrusel--encabezado {
+        margin-top: 100px;
+    }
+
+    #benefits {
+        min-height: 840px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #methodology {
+        min-height: 860px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    #testimony {
+        min-height: 780px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #courses {
+        min-height: 1380px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #institutions {
+        min-height: 850px;
+        background-color: #B4B3B3;
+    }
+
+    #networking {
+        min-height: 410px;
+        background-color: #32325C;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #form {
+        min-height: 990px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #footer {
+        min-height: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #copy {
+        min-height: 60px;
+        background-color: #000018;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-// SECCIONES
-#header {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-}
 
-#carrusel--encabezado {
-    margin-top: 100px;
-}
 
-#beneficios {
-    height: 840px;
-    @include flex-colum-jc-ai-center;
-}
+// Vista mobile
+@media only screen and (min-width:0px) and (max-width:854px) {
+    // Padding generales
+    .padding-x {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .padding-y {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-#metodologia {
-    height: 860px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 160px;
-}
+    // SECCIONES
+    #header {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
 
-#testimonios {
-    height: 780px;
-    @include flex-colum-jc-ai-center;
-}
+    #carrusel--encabezado {
+        margin-top: 100px;
+    }
 
-#cursos {
-    height: 1380px;
-    @include flex-colum-jc-ai-center;
-}
+    #benefits {
+        min-height: 840px;
+        @include flex-colum-jc-ai-center;
+    }
 
-#networking {
-    height: 410px;
-    @include flex-colum-jc-ai-center;
-}
+    #methodology {
+        min-height: 860px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+    }
 
-#formulario {
-    height: 990px;
-    @include flex-colum-jc-ai-center;
-}
+    #testimony {
+        min-height: 780px;
+        @include flex-colum-jc-ai-center;
+    }
 
-#footer {
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    #courses {
+        min-height: 1380px;
+        @include flex-colum-jc-ai-center;
+    }
 
-#copy {
-    height: 60px;
-    padding: 30px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #institutions {
+        min-height: 850px;
+        background-color: #B4B3B3;
+    }
 
-// Encabezados secciones
-.encabezado--titulo {
-    font-size: 50px;
-    text-align: center;
-}
-.encabezado--text {
-    font-size: 25px;
-    margin-top: 40px;
-    width: 730px;
-    text-align: center;
+    #networking {
+        min-height: 410px;
+        background-color: #32325C;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #form {
+        min-height: 990px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #footer {
+        min-height: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #copy {
+        min-height: 60px;
+        background-color: #000018;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
