@@ -385,21 +385,21 @@
 @media(max-width: 576px){
 
   #logo {
-    position: fixed;
-    top:10px;
-    left: 10px;
+    position: fixed !important;
+    top:10px !important;
+    left: 10px !important;
   }
   
    .navbar-toggler{
-    position: fixed;
-    top:15px;
-    right: 10px;
+    position: fixed !important;
+    top:15px !important;
+    right: 10px !important;
 
    }
 
    #navbarNav{
-     position: relative;
-     top: 15px;
+     position: relative!important;
+     top: 15px !important;
    }
 }
 
@@ -410,21 +410,21 @@
 
   
   #logo {
-    position: fixed;
-    top:10px;
-    left: 10px;
+    position: fixed !important;
+    top:10px !important;
+    left: 10px !important;
   }
   
    .navbar-toggler{
-    position: fixed;
-    top:15px;
-    right: 10px;
+    position: fixed !important;
+    top:15px !important;
+    right: 10px !important;
 
    }
 
    #navbarNav{
-     position: relative;
-     top: 15px;
+     position: relative !important;
+     top: 15px !important;
    }
 
  
