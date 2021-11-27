@@ -385,9 +385,9 @@
 @media(max-width: 576px){
 
   #logo {
-    position: fixed;
-    top:10px;
-    left: 10px;
+    position: fixed !important;
+    top:10px !important;
+    left: 10px !important;
   }
   
    .navbar-toggler{
