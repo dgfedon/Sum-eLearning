@@ -375,3 +375,90 @@
     display: flex;
     justify-content: center;
     align-items: center; } }
+
+
+
+    /* Estilos RESPONSIVE */
+
+    /* Estilos para pantalla pequeña */
+
+@media(max-width: 576px){
+
+  #logo {
+    position: fixed;
+    top:10px;
+    left: 10px;
+  }
+  
+   .navbar-toggler{
+    position: fixed;
+    top:15px;
+    right: 10px;
+
+   }
+
+   #navbarNav{
+     position: relative;
+     top: 15px;
+   }
+}
+
+
+/*Estilos para pantalla 768px  -- MEDIANA*/
+
+@media (max-width:768px){
+
+  
+  #logo {
+    position: fixed;
+    top:10px;
+    left: 10px;
+  }
+  
+   .navbar-toggler{
+    position: fixed;
+    top:15px;
+    right: 10px;
+
+   }
+
+   #navbarNav{
+     position: relative;
+     top: 15px;
+   }
+
+ 
+}
+  
+
+
+/* Estilos para desktop */
+
+
+
+@media(max-width:1200px){
+
+     
+  #logo {
+    position: fixed;
+    top:10px;
+    left: 10px;
+  }
+  
+   .navbar-toggler{
+    position: fixed;
+    top:15px;
+    right: 10px;
+
+   }
+
+   #navbarNav{
+     position: relative;
+     top: 15px;
+   }
+
+ 
+
+  
+}
+    
