@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media only screen and (min-width: 855px) {
   .header--nav {
     color: #000035;
@@ -5,12 +6,20 @@
     font-size: 20px;
     display: block;
     padding: 0.5rem 10px; }
+    .header--nav:hover {
+      color: #000035;
+      font-weight: bold;
+      text-decoration: none; }
   .header--training {
     color: #FE4A00;
     font-family: "Lato", sans-serif;
     font-size: 20px;
     display: block;
     padding: 0.5rem 10px; }
+    .header--training:hover {
+      color: #FE4A00;
+      font-weight: bold;
+      text-decoration: none; }
   .hero__group--text h5 {
     font-family: "Lato", sans-serif;
     font-size: 60px; }
@@ -34,25 +43,27 @@
     font-family: "Lato", sans-serif;
     font-size: 50px;
     color: #000035; }
+  .bubble--text h5 {
+    font-size: 30px; }
+  .bubble--text p {
+    font-size: 18px; }
+  .testimony--text .card-title {
+    font-size: 18px; }
+  .testimony--text .card-text {
+    font-size: 14px;
+    text-align: center; }
   .btn--text {
     font-family: "Lato", sans-serif;
     font-size: 22px; }
-  .networking--text {
-    font-family: "Lato", sans-serif;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 1050px;
-    color: #F8F8F8;
-    margin-bottom: 40px; }
-  .form__background--text h3 {
+  .form__group--text h3 {
     font-family: "Lato", sans-serif;
     font-size: 38px;
     color: #FE4A00;
     text-align: center; }
-  .form__background--text p {
+  .form__group--text p {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 20px;
+    width: 490px;
     margin-top: 30px;
     color: #000035;
     text-align: center; }
@@ -62,14 +73,14 @@
     color: #000035; }
   .copy--text {
     font-size: 14px;
-    text-align: center; } }
+    text-align: center;
+    color: white; } }
 
-.cursos {
-  background-color: white; }
+.card {
+  border-radius: 10px; }
 
 .card-img-top {
-  height: 40vh;
-  width: 100%;
+  height: 30vh;
   object-fit: cover; }
 
 .owl-prev {
@@ -132,29 +143,58 @@
   .icon--networking {
     font-size: 80px;
     color: white; }
-  .benefits__fund--colors {
-    background-image: url("../assets/img/beneficios_sum_elearning.png");
+  .benefits__bg--img {
+    background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
     background-position: top;
-    background-repeat: no-repeat; }
-  .methodology__fund--img {
-    background-image: url("../assets/img/metodologia_sum_elearnig.jpg");
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
-  .testimony__fund--colors {
-    background: linear-gradient(180deg, #FFB62A 0%, rgba(255, 200, 177, 0) 100%);
-    opacity: 0.8; }
-  .form__fund--img {
-    background-image: url("../assets/img/form_sum_elearning.jpg");
+    background-size: contain; }
+  .benefits__bg--color {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 100px 100px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5; }
+  .benefits__bg--bottom {
+    background: #F7FAFC;
+    height: 100%;
+    z-index: -1; }
+  .methodology__bg--color {
+    background-color: #F7FAFC;
+    border-radius: 0px 0px 100px 100px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 4; }
+  .methodology__bg--bottom {
+    background: #FFF1E4;
+    height: 100%;
+    z-index: -1; }
+  .testimony__bg--color {
+    background-color: #FFF1E4;
+    border-radius: 0px 0px 100px 100px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 3; }
+  .testimony--bottom {
+    background: gainsboro;
+    height: 100%;
+    z-index: -1; }
+  .courses__bg--color {
+    background-color: gainsboro; }
+  .form__bg--img {
+    background-image: url("../assets/img/bg_form_sum_elearning.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 2px solid #FE4A00;
     border-bottom: 2px solid #FE4A00; }
-  .form__background {
+  .form__bg--group {
     min-width: 705px;
     min-height: 565px;
-    padding: 20px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px; }
   .carousel__btn--courses {
@@ -187,37 +227,71 @@
     color: #000035; } }
 
 @media only screen and (min-width: 855px) {
-  .benefits {
-    margin-top: 80px; }
-    .benefits .benefits--group {
+  .header--group a img {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 48px; }
+  .header--group nav {
+    display: flex;
+    align-items: center; }
+  .benefits--group {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; }
+    .benefits--group article {
       border: none;
-      margin: 10px 30px; }
-      .benefits .benefits--group p {
+      margin: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .benefits--group article img {
+        width: 160px;
+        height: 160px; }
+      .benefits--group article p {
         margin-top: 15px;
         font-family: "Lato", sans-serif;
         font-size: 30px;
         color: #FE4A00; }
-      .benefits .benefits--group span {
+      .benefits--group article span {
         min-width: 340px;
         font-family: "Open Sans Condensed", sans-serif;
         font-size: 18px; }
   .methodology {
     margin-top: 40px; }
     .methodology .methodology--group {
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-left: 30px;
+      width: 450px; }
       .methodology .methodology--group h3 {
+        display: list-item;
+        list-style: '✓ ';
         font-family: "Lato", sans-serif;
         font-size: 35px;
         color: #FE4A00; }
       .methodology .methodology--group p {
         font-family: "Open Sans Condensed", sans-serif;
-        font-size: 25px;
-        width: 450px; }
+        font-size: 25px; }
+  .testimony {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; }
+    .testimony .testimony--group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 18rem;
+      margin: 0px 10px;
+      padding-top: 20px;
+      border: none; }
+    .testimony img {
+      width: 80px;
+      height: 80px; }
   .form--group {
-    margin-top: 40px;
+    margin-top: 10px;
     min-width: 560px;
     min-height: 360px;
-    padding: 0px 40px; }
+    padding: 0px 10px; }
     .form--group label {
       font-family: "Lato", sans-serif;
       font-size: 15px;
@@ -234,7 +308,19 @@
       background-color: #ffffff;
       border: 1px solid #000035;
       border-radius: 6px;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+  .foo--group a {
+    display: flex;
+    align-items: center; }
+    .foo--group a img {
+      width: 334px;
+      height: 70px; }
+  .foo--group ul {
+    display: flex;
+    align-items: center; }
+    .foo--group ul img {
+      width: 40px;
+      height: 40px; } }
 
 * {
   margin: 0;
@@ -246,11 +332,11 @@
 
 @media only screen and (min-width: 855px) {
   .padding-x {
-    padding-right: 40px;
-    padding-left: 40px; }
+    padding-right: 100px;
+    padding-left: 100px; }
   .padding-y {
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-top: 60px;
+    padding-bottom: 60px; }
   #header {
     min-height: 100px;
     display: flex;
@@ -259,113 +345,36 @@
   #carrusel--encabezado {
     margin-top: 100px; }
   #benefits {
-    min-height: 840px;
+    min-height: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #methodology {
-    min-height: 860px;
+    min-height: 940px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 100px; }
+    justify-content: center; }
   #testimony {
-    min-height: 780px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #courses {
-    min-height: 1380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #institutions {
-    min-height: 850px;
-    background-color: #B4B3B3; }
-  #networking {
-    min-height: 410px;
-    background-color: #32325C;
+    min-height: 1090px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #form {
-    min-height: 990px;
+    min-height: 665px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #footer {
-    min-height: 240px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  #copy {
-    min-height: 60px;
-    background-color: #000018;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
-@media only screen and (min-width: 0px) and (max-width: 854px) {
-  .padding-x {
-    padding-right: 15px;
-    padding-left: 15px; }
-  .padding-y {
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  #header {
-    min-height: 100px;
-    display: flex;
-    justify-content: space-around;
-    background-color: white; }
-  #carrusel--encabezado {
-    margin-top: 100px; }
-  #benefits {
-    min-height: 840px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #methodology {
-    min-height: 860px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px; }
-  #testimony {
-    min-height: 780px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #courses {
-    min-height: 1380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #institutions {
-    min-height: 850px;
-    background-color: #B4B3B3; }
-  #networking {
-    min-height: 410px;
-    background-color: #32325C;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #form {
-    min-height: 990px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  #footer {
-    min-height: 240px;
+    min-height: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center; }

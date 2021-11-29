@@ -1,12 +1,17 @@
 // Vista desktop
 @media only screen and (min-width:855px) {
-    // Enlaces
+    // Enlaces header
     .header--nav {
         color: $primaryBlue;
         font-family: $lato;
         font-size: 20px;
         display: block;
         padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryBlue;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
     .header--training {
         color: $primaryOrange;
@@ -14,6 +19,11 @@
         font-size: 20px;
         display: block;
         padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryOrange;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 
     // Carousel
@@ -47,11 +57,30 @@
         color: $primaryBlue;
     }
 
-    // Encabezado methodology
+    // Methodology
     .encabezado--methodology {
         font-family: $lato;
         font-size: 50px;
         color: $primaryBlue;
+    }
+
+    // Testimony
+    .bubble--text {
+        h5 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .testimony--text {
+        .card-title {
+            font-size: 18px;
+        }
+        .card-text {
+            font-size: 14px;
+            text-align: center;
+        }
     }
 
     // BTN
@@ -60,19 +89,8 @@
         font-size: 22px;
     }
 
-    // Texto networking
-    .networking--text {
-        font-family: $lato;
-        font-size: 40px;
-        text-transform: uppercase;
-        text-align: center;
-        width: 1050px;
-        color: #F8F8F8;
-        margin-bottom: 40px;
-    }
-
-    // Text encabezado form
-    .form__background--text {
+    // Form
+    .form__group--text {
         h3 {
             font-family: $lato;
             font-size: 38px;
@@ -82,23 +100,25 @@
         p {
             font-family: $openSans;
             font-size: 20px;
+            width: 490px;
             margin-top: 30px;
             color: $primaryBlue;
             text-align: center;
         }
     }
 
-    // Texto footer
+    // Footer
     .foo--text {
         font-family: $lato;
         font-size: 22px;
         color: $primaryBlue;
     }
 
-    // Texto copy
+    // Copy
     .copy--text {
         font-size: 14px;
         text-align: center;
+        color: white;
     }
 }
 

@@ -1,11 +1,34 @@
 // Vista desktop
 @media only screen and (min-width:855px) {
+    // Header
+    .header--group {
+        a img {
+            display: flex;
+            align-items: center;
+            width: 220px;
+            height: 48px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+    }
+
     // Benefits
-    .benefits {
+    .benefits--group {
         margin-top: 80px;
-        .benefits--group {
+        display: flex;
+        justify-content: center;
+        article {
             border: none;
             margin: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 160px;
+                height: 160px;
+            }
             p {
                 margin-top: 15px;
                 font-family: $lato;
@@ -25,7 +48,11 @@
         margin-top: 40px;
         .methodology--group {
             margin-top: 20px;
+            margin-left: 30px;
+            width: 450px;
             h3 {
+                display: list-item;
+                list-style: '✓ ';
                 font-family: $lato;
                 font-size: 35px;
                 color: $primaryOrange;
@@ -33,17 +60,36 @@
             p {
                 font-family: $openSans;
                 font-size: 25px;
-                width: 450px;
             }
+        }
+    }
+
+    // Testimony
+    .testimony {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        .testimony--group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 18rem;
+            margin: 0px 10px;
+            padding-top: 20px;
+            border: none;
+        }
+        img {
+            width: 80px;
+            height: 80px;
         }
     }
 
     // Form
     .form--group {
-        margin-top: 40px;
+        margin-top: 10px;
         min-width: 560px;
         min-height: 360px;
-        padding: 0px 40px;
+        padding: 0px 10px;
         label {
             font-family: $lato;
             font-size: 15px;
@@ -62,6 +108,26 @@
             border: 1px solid $primaryBlue;
             border-radius: 6px;
             margin-bottom: 10px;
+        }
+    }
+
+    // Footer
+    .foo--group {
+        a {
+            display: flex;
+            align-items: center;
+            img {
+                width: 334px;
+                height: 70px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            img {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
