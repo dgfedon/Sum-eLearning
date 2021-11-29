@@ -384,3 +384,90 @@
     display: flex;
     justify-content: center;
     align-items: center; } }
+
+
+
+    /* Estilos RESPONSIVE */
+
+    /* Estilos para pantalla pequeña */
+
+@media(max-width: 576px){
+
+  #logo {
+    position: fixed !important;
+    top:10px !important;
+    left: 10px !important;
+  }
+  
+   .navbar-toggler{
+    position: fixed !important;
+    top:15px !important;
+    right: 10px !important;
+
+   }
+
+   #navbarNav{
+     position: relative!important;
+     top: 15px !important;
+   }
+}
+
+
+/*Estilos para pantalla 768px  -- MEDIANA*/
+
+@media (max-width:768px){
+
+  
+  #logo {
+    position: fixed !important;
+    top:10px !important;
+    left: 10px !important;
+  }
+  
+   .navbar-toggler{
+    position: fixed !important;
+    top:15px !important;
+    right: 10px !important;
+
+   }
+
+   #navbarNav{
+     position: relative !important;
+     top: 15px !important;
+   }
+
+ 
+}
+  
+
+
+/* Estilos para desktop */
+
+
+
+@media(max-width:1200px){
+
+     
+  #logo {
+    position: fixed;
+    top:10px;
+    left: 10px;
+  }
+  
+   .navbar-toggler{
+    position: fixed;
+    top:15px;
+    right: 10px;
+
+   }
+
+   #navbarNav{
+     position: relative;
+     top: 15px;
+   }
+
+ 
+
+  
+}
+    
