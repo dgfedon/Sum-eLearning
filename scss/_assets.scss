@@ -38,9 +38,20 @@
     // Hero
     .hero__group {
         height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         div {
             margin: 20px 0px 20px 210px;
             width: 640px;
+        }
+    }
+    .hero--scale {
+        transition: all 2.0s ease-in;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
         }
     }
 
@@ -85,7 +96,7 @@
         right: 20px;
         bottom: 65px;
         border: none;
-        z-index: 10;
+        z-index: 100;
     }
 
     .icon--networking {
@@ -103,7 +114,7 @@
     .benefits__bg--color {
         background-color: #FFFFFF;
         border-radius: 0px 0px 100px 100px;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
         position: relative;
         z-index: 5;
     }
@@ -119,7 +130,7 @@
     .methodology__bg--color {
         background-color: #F7FAFC;
         border-radius: 0px 0px 100px 100px;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
         position: relative;
         z-index: 4;
     }
@@ -132,19 +143,23 @@
     .testimony__bg--color {
         background-color: #FFF1E4;
         border-radius: 0px 0px 100px 100px;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
         position: relative;
         z-index: 3;
     }
     .testimony--bottom {
-        background: gainsboro;
+        background: white;
         height: 100%;
         z-index: -1;
     }
 
     .courses__bg--color {
-        background-color: gainsboro;
+        background-color: white;
     }
+
+    // .networking__bg--img {
+    //     background-image: url("");
+    // }
 
     .form__bg--img {
         background-image: url("../assets/img/bg_form_sum_elearning.jpg");
@@ -205,6 +220,181 @@
 
 
 // Vista mobile
-// @media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:854px) {
+    // Hero
+    .hero__group {
+        // height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // div {
+        //     margin: 20px 0px 20px 100px;
+        //     width: 640px;
+        // }
+    }
 
-// }
+    // GLOBO COMMENT
+    .comments {
+        width: 250px;
+        .comment {
+            width: 100%;
+            p {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    .bubble {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        color: black;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+        
+            bottom: -15px;
+            margin-left: 95px;
+        
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        
+            border-top: 15px solid white;
+        }
+    }
+
+
+    // ICON
+    .icon__permanent--wa {
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+        border: none;
+        z-index: 100;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .icon--networking {
+        font-size: 30px;
+        color: white;
+    }
+
+    // FUND
+    .benefits__bg--img {
+        background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .benefits__bg--color {
+        background-color: #FFFFFF;
+        border-radius: 0px 0px 50px 50px;
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 5;
+    }
+    .benefits__bg--bottom {
+        background: #F7FAFC;
+        height: 100%;
+        z-index: -1;
+    }
+
+    // .methodology__fund--img {
+    //     background-color: #F7FAFC;
+    // }
+    .methodology__bg--color {
+        background-color: #F7FAFC;
+        border-radius: 0px 0px 50px 50px;
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 4;
+    }
+    .methodology__bg--bottom {
+        background: #FFF1E4;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .testimony__bg--color {
+        background-color: #FFF1E4;
+        border-radius: 0px 0px 50px 50px;
+        // box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 3;
+    }
+    .testimony--bottom {
+        background: gainsboro;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .courses__bg--color {
+        background-color: gainsboro;
+    }
+
+    .form__bg--img {
+        background-image: url("../assets/img/bg_form_sum_elearning.jpg");
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 2px solid $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
+    }
+
+    .form__bg--group {
+        // min-width: 705px;
+        // min-height: 565px;
+        padding: 30px 0px;
+        @include flex-colum-jc-ai-center;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+        border-radius: 8px;
+    }
+
+    // BTN
+    .carousel__btn--courses {
+        background-color: #F8F8F8;
+        border: none;
+        padding: 5px 10px;
+        // width: 220px;
+        // height: 60px;
+        color: $primaryBlue;
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 5px 10px;
+        // width: 220px;
+        // height: 60px;
+        color: #F8F8F8;
+    }
+
+    .methodology--btn {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 8px 12px;
+        // width: 255px;
+        // height: 60px;
+        color: #F8F8F8;
+        margin-top: 20px;
+    }
+
+    .form__btn--submit {
+        background-color: $secondaryOrange;
+        border: none;
+        // width: 120px;
+        // height: 38px;
+        padding: 8px 12px;
+        font-family: $lato;
+        font-size: 14px;
+        color: $primaryBlue;
+    }
+}

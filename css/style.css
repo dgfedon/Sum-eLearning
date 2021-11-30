@@ -55,6 +55,14 @@
   .btn--text {
     font-family: "Lato", sans-serif;
     font-size: 22px; }
+  .networking--text {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 1050px;
+    color: #F8F8F8;
+    margin-bottom: 40px; }
   .form__group--text h3 {
     font-family: "Lato", sans-serif;
     font-size: 38px;
@@ -73,6 +81,81 @@
     color: #000035; }
   .copy--text {
     font-size: 14px;
+    text-align: center;
+    color: white; } }
+
+@media only screen and (min-width: 0px) and (max-width: 854px) {
+  .header--nav {
+    color: #000035;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 0.5rem 10px; }
+  .header--training {
+    color: #FE4A00;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    display: block;
+    padding: 0.5rem 10px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 20px; }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 16px;
+    text-align: start; }
+  .encabezado--title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #000035; }
+  .encabezado--subtitle {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    color: #000035; }
+  .encabezado--methodology {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    color: #000035;
+    text-align: center; }
+  .bubble--text h5 {
+    font-size: 20px; }
+  .bubble--text p {
+    font-size: 18px; }
+  .testimony--text .card-title {
+    font-size: 18px; }
+  .testimony--text .card-text {
+    font-size: 14px;
+    text-align: center; }
+  .btn--text {
+    font-family: "Lato", sans-serif;
+    font-size: 14px; }
+  .networking--text {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F8F8F8;
+    margin-bottom: 20px; }
+  .form__group--text h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #FE4A00;
+    text-align: center; }
+  .form__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000035;
+    text-align: center; }
+  .foo--text {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #000035; }
+  .copy--text {
+    font-size: 12px;
     text-align: center;
     color: white; } }
 
@@ -106,10 +189,19 @@
 
 @media only screen and (min-width: 855px) {
   .hero__group {
-    height: 700px; }
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .hero__group div {
       margin: 20px 0px 20px 210px;
       width: 640px; }
+  .hero--scale {
+    transition: all 2.0s ease-in; }
+    .hero--scale:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1) 0.1s; }
   .comments {
     width: 280px; }
     .comments .comment {
@@ -139,7 +231,7 @@
     right: 20px;
     bottom: 65px;
     border: none;
-    z-index: 10; }
+    z-index: 100; }
   .icon--networking {
     font-size: 80px;
     color: white; }
@@ -151,7 +243,6 @@
   .benefits__bg--color {
     background-color: #FFFFFF;
     border-radius: 0px 0px 100px 100px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 5; }
   .benefits__bg--bottom {
@@ -161,7 +252,6 @@
   .methodology__bg--color {
     background-color: #F7FAFC;
     border-radius: 0px 0px 100px 100px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 4; }
   .methodology__bg--bottom {
@@ -171,15 +261,14 @@
   .testimony__bg--color {
     background-color: #FFF1E4;
     border-radius: 0px 0px 100px 100px;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 3; }
   .testimony--bottom {
-    background: gainsboro;
+    background: white;
     height: 100%;
     z-index: -1; }
   .courses__bg--color {
-    background-color: gainsboro; }
+    background-color: white; }
   .form__bg--img {
     background-image: url("../assets/img/bg_form_sum_elearning.jpg");
     background-position: center;
@@ -226,6 +315,120 @@
     font-size: 14px;
     color: #000035; } }
 
+@media only screen and (min-width: 0px) and (max-width: 854px) {
+  .hero__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .comments {
+    width: 250px; }
+    .comments .comment {
+      width: 100%; }
+      .comments .comment p {
+        margin: 0 0 10px 0; }
+  .bubble {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 25px; }
+    .bubble::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -15px;
+      margin-left: 95px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid white; }
+  .icon__permanent--wa {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    border: none;
+    z-index: 100; }
+    .icon__permanent--wa img {
+      width: 70px;
+      height: 70px; }
+  .icon--networking {
+    font-size: 30px;
+    color: white; }
+  .benefits__bg--img {
+    background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .benefits__bg--color {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    z-index: 5; }
+  .benefits__bg--bottom {
+    background: #F7FAFC;
+    height: 100%;
+    z-index: -1; }
+  .methodology__bg--color {
+    background-color: #F7FAFC;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    z-index: 4; }
+  .methodology__bg--bottom {
+    background: #FFF1E4;
+    height: 100%;
+    z-index: -1; }
+  .testimony__bg--color {
+    background-color: #FFF1E4;
+    border-radius: 0px 0px 50px 50px;
+    position: relative;
+    z-index: 3; }
+  .testimony--bottom {
+    background: gainsboro;
+    height: 100%;
+    z-index: -1; }
+  .courses__bg--color {
+    background-color: gainsboro; }
+  .form__bg--img {
+    background-image: url("../assets/img/bg_form_sum_elearning.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
+  .form__bg--group {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px; }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    padding: 5px 10px;
+    color: #000035; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    padding: 5px 10px;
+    color: #F8F8F8; }
+  .methodology--btn {
+    background-color: #000035;
+    border: none;
+    padding: 8px 12px;
+    color: #F8F8F8;
+    margin-top: 20px; }
+  .form__btn--submit {
+    background-color: #FF792E;
+    border: none;
+    padding: 8px 12px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: #000035; } }
+
 @media only screen and (min-width: 855px) {
   .header--group a img {
     display: flex;
@@ -261,7 +464,7 @@
     margin-top: 40px; }
     .methodology .methodology--group {
       margin-top: 20px;
-      margin-left: 30px;
+      margin-left: 40px;
       width: 450px; }
       .methodology .methodology--group h3 {
         display: list-item;
@@ -316,11 +519,111 @@
       width: 334px;
       height: 70px; }
   .foo--group ul {
+    list-style-type: none;
+    margin-bottom: 0px;
     display: flex;
     align-items: center; }
-    .foo--group ul img {
-      width: 40px;
-      height: 40px; } }
+  .foo--group .foo--redes img {
+    width: 40px;
+    height: 40px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 854px) {
+  .header--group a img {
+    display: flex;
+    align-items: center;
+    width: 176px;
+    height: 38px; }
+  .header--group nav {
+    display: flex;
+    align-items: center; }
+  .benefits--group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .benefits--group article {
+      border: none;
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .benefits--group article img {
+        width: 80px;
+        height: 80px; }
+      .benefits--group article p {
+        margin-top: 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 25px;
+        color: #FE4A00; }
+      .benefits--group article span {
+        margin: 0px 20px;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 18px; }
+  .methodology {
+    margin: 10px; }
+    .methodology .methodology--group {
+      margin-top: 20px; }
+      .methodology .methodology--group h3 {
+        display: list-item;
+        list-style: '✓ ';
+        font-family: "Lato", sans-serif;
+        font-size: 22px;
+        color: #FE4A00; }
+      .methodology .methodology--group p {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 18px; }
+  .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px; }
+    .testimony .testimony--group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 10px;
+      padding-top: 20px;
+      border: none; }
+    .testimony img {
+      width: 80px;
+      height: 80px; }
+  .form--group {
+    margin-top: 10px;
+    padding: 0px 10px; }
+    .form--group label {
+      font-family: "Lato", sans-serif;
+      font-size: 15px;
+      color: #000035;
+      margin-bottom: 0px;
+      margin-left: 15px; }
+    .form--group input, .form--group textarea {
+      display: block;
+      width: 100%;
+      padding: 5px 0px 5px 20px;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-size: 15px;
+      color: #C0C0C0;
+      background-color: #ffffff;
+      border: 1px solid #000035;
+      border-radius: 6px;
+      margin-bottom: 10px; }
+  .foo--group .foo--logo {
+    display: flex;
+    align-items: center; }
+    .foo--group .foo--logo img {
+      width: 258px;
+      height: 56px; }
+  .foo--group ul {
+    list-style-type: none; }
+  .foo--group .foo--contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .foo--group .foo--redes {
+    display: flex;
+    justify-content: center; }
+    .foo--group .foo--redes img {
+      width: 50px;
+      height: 50px; } }
 
 * {
   margin: 0;
@@ -367,6 +670,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  #networking {
+    min-height: 410px;
+    background-color: #32325C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   #form {
     min-height: 665px;
     display: flex;
@@ -385,89 +695,56 @@
     justify-content: center;
     align-items: center; } }
 
-
-
-    /* Estilos RESPONSIVE */
-
-    /* Estilos para pantalla pequeña */
-
-@media(max-width: 576px){
-
-  #logo {
-    position: fixed !important;
-    top:10px !important;
-    left: 10px !important;
-  }
-  
-   .navbar-toggler{
-    position: fixed !important;
-    top:15px !important;
-    right: 10px !important;
-
-   }
-
-   #navbarNav{
-     position: relative!important;
-     top: 15px !important;
-   }
-}
-
-
-/*Estilos para pantalla 768px  -- MEDIANA*/
-
-@media (max-width:768px){
-
-  
-  #logo {
-    position: fixed !important;
-    top:10px !important;
-    left: 10px !important;
-  }
-  
-   .navbar-toggler{
-    position: fixed !important;
-    top:15px !important;
-    right: 10px !important;
-
-   }
-
-   #navbarNav{
-     position: relative !important;
-     top: 15px !important;
-   }
-
- 
-}
-  
-
-
-/* Estilos para desktop */
-
-
-
-@media(max-width:1200px){
-
-     
-  #logo {
-    position: fixed;
-    top:10px;
-    left: 10px;
-  }
-  
-   .navbar-toggler{
-    position: fixed;
-    top:15px;
-    right: 10px;
-
-   }
-
-   #navbarNav{
-     position: relative;
-     top: 15px;
-   }
-
- 
-
-  
-}
-    
+@media only screen and (min-width: 0px) and (max-width: 854px) {
+  .padding-x {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .padding-y {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white; }
+  #carrusel--encabezado {
+    margin-top: 100px; }
+  #benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #methodology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #networking {
+    background-color: #32325C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #copy {
+    min-height: 60px;
+    background-color: #000018;
+    text-align: center;
+    padding: 10px; } }

@@ -55,6 +55,12 @@
         @include flex-colum-jc-ai-center;
     }
 
+    #networking {
+        min-height: 410px;
+        background-color: #32325C;
+        @include flex-colum-jc-ai-center;
+    }
+
     #form {
         min-height: 665px;
         @include flex-colum-jc-ai-center;
@@ -79,6 +85,73 @@
 
 
 // Vista mobile
-// @media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:854px) {
+    // Padding generales
+    .padding-x {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .padding-y {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-// }
+    // SECCIONES
+    #header {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    #carrusel--encabezado {
+        margin-top: 100px;
+    }
+
+    #benefits {
+        // min-height: 960px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #methodology {
+        // min-height: 940px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #testimony {
+        // min-height: 800px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #courses {
+        // min-height: 1090px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #networking {
+        // min-height: 410px;
+        background-color: #32325C;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #form {
+        // min-height: 665px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #footer {
+        // min-height: 160px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #copy {
+        min-height: 60px;
+        background-color: #000018;
+        text-align: center;
+        padding: 10px;
+    }
+}
