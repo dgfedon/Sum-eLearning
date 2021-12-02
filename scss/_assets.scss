@@ -148,6 +148,21 @@
         }
     }
 
+    .courses--btn {
+        background-color: $primaryBlue;
+        border: none;
+        border-radius: 15px;
+        padding: 14px;
+        font-size: 18px;
+        color: $textWhite;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
     .form__btn--submit {
         background-color: $secondaryOrange;
         border: none;
