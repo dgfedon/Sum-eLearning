@@ -1,5 +1,5 @@
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1100px) {
     // Enlaces header
     .header--nav {
         color: $primaryBlue;
@@ -115,6 +115,160 @@
         min-width: 1050px;
         color: $textWhite;
         margin-bottom: 40px;
+    }
+
+    // Form
+    .form__group--text {
+        h3 {
+            font-family: $lato;
+            font-size: 38px;
+            color: $primaryOrange;
+            text-align: center;
+        }
+        p {
+            font-family: $openSans;
+            font-size: 20px;
+            width: 490px;
+            margin-top: 30px;
+            color: $primaryBlue;
+            text-align: center;
+        }
+    }
+
+    // Footer
+    .foo--text {
+        font-family: $lato;
+        font-size: 22px;
+        color: $primaryBlue;
+    }
+
+    // Copy
+    .copy--text {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+// Vista intermedia
+@media only screen and (min-width:855px) and (max-width:1099px) {
+    // Enlaces header
+    .header--nav {
+        color: $primaryBlue;
+        font-family: $lato;
+        font-size: 20px;
+        display: block;
+        padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryBlue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .header--training {
+        color: $primaryOrange;
+        font-family: $lato;
+        font-size: 20px;
+        display: block;
+        padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryOrange;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 50px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 40px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    // Encabezado title
+    .encabezado--title {
+        font-family: $lato;
+        font-size: 50px;
+        text-align: center;
+        color: $primaryBlue;
+    }
+
+    // Encabezado subtitle
+    .encabezado--subtitle {
+        font-family: $openSans;
+        font-size: 25px;
+        margin-top: 40px;
+        width: 730px;
+        text-align: center;
+        color: $primaryBlue;
+    }
+
+    // Methodology
+    .encabezado--methodology {
+        font-family: $lato;
+        font-size: 50px;
+        color: $primaryBlue;
+    }
+
+    // Testimony
+    .bubble--text {
+        h5 {
+            font-family: $lato;
+            font-size: 35px;
+            height: 85px;
+        }
+        p {
+            font-family: $openSans;
+            font-size: 18px;
+            color: $textBlack;
+            height: 115px;
+        }
+    }
+    .testimony--text {
+        .card-title {
+            font-family: $lato;
+            font-weight: bold;
+            font-size: 18px;
+            color: $textBlack;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .card-text {
+            font-family: $lato;
+            font-size: 14px;
+            color: $textBlack;
+            text-align: center;
+        }
+    }
+
+    // BTN
+    .btn--text {
+        font-family: $lato;
+        font-size: 22px;
+        letter-spacing: 0.03em;
+    }
+
+    // Networking
+    .networking--text {
+        font-family: $lato;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+        color: $textWhite;
+        margin: 0px 15px 40px 15px;
     }
 
     // Form

@@ -1,14 +1,4 @@
 // CARRUSEL COURSES
-// .cursos {
-//     background-color: white;
-// }
-.card{
-    border-radius: 10px;
-}
-.card-img-top{
-    height: 30vh;
-    object-fit: cover;
-}
 .owl-prev{
     left: -20px;
 }
@@ -34,7 +24,7 @@
 
 
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1150px) {
     // Hero
     .hero__group {
         height: 700px;
@@ -45,6 +35,13 @@
         div {
             margin: 20px 0px 20px 210px;
             width: 640px;
+        }
+    }
+    .img--scale {
+        transition: all 2.0s ease-in;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
         }
     }
     .carousel-item {
@@ -183,13 +180,20 @@
 
 
 // Vista mobile
-@media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:1149px) {
     // Hero
     .hero__group {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .img--scale {
+        transition: all 2.0s ease-in;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
+        }
     }
     .carousel-item {
         img {
@@ -243,7 +247,6 @@
         }
     }
 
-
     // ICON
     .icon__permanent--wa {
         position: fixed;
@@ -294,6 +297,21 @@
         }
     }
 
+    .courses--btn {
+        background-color: $primaryBlue;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 16px;
+        color: $textWhite;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
     .form__btn--submit {
         background-color: $secondaryOrange;
         border: none;
@@ -308,3 +326,47 @@
         }
     }
 }
+
+
+// NavBar
+@media only screen and (min-width:600px) and (max-width:954px) {
+    .navbar-nav {
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .navbar-brand {
+        position: fixed;
+        top: 20px;
+        left: 40px;
+    }
+    
+    .navbar-toggler {
+        position: fixed;
+        top: 30px;
+        right: 40px;
+    }
+} 
+// NavBar
+@media only screen and (min-width:0px) and (max-width:599px) {
+    .navbar-nav {
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .navbar-brand {
+        position: fixed;
+        top: 26px;
+        left: 20px;
+    }
+    
+    .navbar-toggler {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+    }
+} 

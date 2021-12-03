@@ -1,5 +1,5 @@
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1001px) {
     // Benefits
     .benefits__bg--img {
         background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
@@ -79,6 +79,87 @@
         border-radius: 8px;
     }
 }
+
+
+// Vista intermedia
+@media only screen and (min-width:855px) and (max-width:1000px) {
+    // Benefits
+    .benefits__bg--img {
+        background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .benefits__bg--color {
+        background-color: #FFFFFF;
+        border-radius: 0px 0px 50px 50px;
+        position: relative;
+        z-index: 5;
+    }
+    .benefits__bg--bottom {
+        background: #F7FAFC;
+        height: 100%;
+        z-index: -1;
+    }
+
+    // Methodology
+    .methodology__bg--color {
+        background-color: #F7FAFC;
+        border-radius: 0px 0px 50px 50px;
+        position: relative;
+        z-index: 4;
+    }
+    .methodology__bg--img {
+        display: none;
+    }
+    .methodology__bg--bottom {
+        background: #FFF1E4;
+        height: 100%;
+        z-index: -1;
+    }
+
+    // Testimony
+    .testimony__bg--color {
+        background-color: #FFF1E4;
+        border-radius: 0px 0px 50px 50px;
+        position: relative;
+        z-index: 3;
+    }
+    .testimony--bottom {
+        background: white;
+        height: 100%;
+        z-index: -1;
+    }
+
+    // Courses
+    .courses__bg--color {
+        background-color: white;
+    }
+
+    // Networkinh
+    .networking__bg--img {
+        background-image: url("../assets/img/bg_networking_sum_elearning.jpg");
+        opacity: 0.7;
+        border-top: 2px solid $primaryOrange;
+    }
+
+    // Form
+    .form__bg--img {
+        background-image: url("../assets/img/bg_form_sum_elearning.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 2px solid $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
+    }
+
+    .form__bg--group {
+        padding: 30px 0px;
+        @include flex-colum-jc-ai-center;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+        border-radius: 8px;
+    }
+}
+
 
 // Vista mobile
 @media only screen and (min-width:0px) and (max-width:854px) {
