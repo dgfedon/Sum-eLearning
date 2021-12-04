@@ -179,24 +179,6 @@
         }
     }
 
-    // Carousel
-    .hero__group--text {
-        h5 {
-            font-family: $lato;
-            font-size: 50px;
-            text-align: initial;
-            color: $textWhite;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        p {
-            font-family: $openSans;
-            font-size: 40px;
-            text-align: initial;
-            color: $textWhite;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-    }
-
     // Encabezado title
     .encabezado--title {
         font-family: $lato;
@@ -256,7 +238,7 @@
     // BTN
     .btn--text {
         font-family: $lato;
-        font-size: 22px;
+        font-size: 18px;
         letter-spacing: 0.03em;
     }
 
