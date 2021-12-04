@@ -370,12 +370,18 @@
     font-size: 16px;
     display: block;
     padding: 0.5rem 10px; }
+    .header--nav:hover {
+      color: #000035;
+      text-decoration: none; }
   .header--training {
     color: #FE4A00;
     font-family: "Lato", sans-serif;
     font-size: 16px;
     display: block;
     padding: 0.5rem 10px; }
+    .header--training:hover {
+      color: #FE4A00;
+      text-decoration: none; }
   .hero__group--text h5 {
     font-family: "Lato", sans-serif;
     font-size: 20px;

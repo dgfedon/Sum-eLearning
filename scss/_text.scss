@@ -21,7 +21,6 @@
         padding: 0.5rem 10px;
         &:hover {
             color: $primaryOrange;
-            font-weight: var(--bold);
             text-decoration: none;
         }
     }
@@ -297,6 +296,10 @@
         font-size: 16px;
         display: block;
         padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryBlue;
+            text-decoration: none;
+        }
     }
     .header--training {
         color: $primaryOrange;
@@ -304,6 +307,10 @@
         font-size: 16px;
         display: block;
         padding: 0.5rem 10px;
+        &:hover {
+            color: $primaryOrange;
+            text-decoration: none;
+        }
     }
 
     // Carousel

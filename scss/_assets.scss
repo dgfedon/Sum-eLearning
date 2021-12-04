@@ -25,15 +25,6 @@
 
 // Vista desktop
 @media only screen and (min-width:1150px) {
-    // Nav
-    nav {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        text-align: center;
-        padding: 2rem 1rem;
-    }
-    
     // Hero
     .hero__group {
         height: 700px;
