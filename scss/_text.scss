@@ -9,7 +9,7 @@
         padding: 0.5rem 10px;
         &:hover {
             color: $primaryBlue;
-            font-weight: bold;
+            font-weight: var(--bold);;
             text-decoration: none;
         }
     }
@@ -21,7 +21,7 @@
         padding: 0.5rem 10px;
         &:hover {
             color: $primaryOrange;
-            font-weight: bold;
+            font-weight: var(--bold);
             text-decoration: none;
         }
     }

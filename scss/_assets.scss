@@ -37,6 +37,14 @@
             width: 640px;
         }
     }
+    nav {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        font: 120% system-ui;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
     .img--scale {
         transition: all 2.0s ease-in;
         &:hover {
@@ -329,7 +337,7 @@
 
 
 // NavBar
-@media only screen and (min-width:600px) and (max-width:954px) {
+@media only screen and (min-width:600px) and (max-width:991px) {
     .navbar-nav {
         position: relative;
         top: 80px;
