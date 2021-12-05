@@ -5,24 +5,28 @@
         color: $primaryBlue;
         font-family: $lato;
         font-size: 20px;
-        display: block;
         padding: 0.5rem 10px;
+        display: inline-block; 
         &:hover {
             color: $primaryBlue;
             text-decoration: none;
-            font-weight: 400;
+            font-weight: bold;
+            display: block;
+            height: 0;
         }
     }
     .header--training {
         color: $primaryOrange;
         font-family: $lato;
         font-size: 20px;
-        display: block;
         padding: 0.5rem 10px;
+        display: block; 
         &:hover {
             color: $primaryOrange;
             text-decoration: none;
-            font-weight: 400;
+            font-weight: bold;
+            display: block;
+            height: 0;
         }
     }
 

@@ -175,22 +175,26 @@
     color: #000035;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    display: block;
-    padding: 0.5rem 10px; }
+    padding: 0.5rem 10px;
+    display: inline-block; }
     .header--nav:hover {
       color: #000035;
       text-decoration: none;
-      font-weight: 400; }
+      font-weight: bold;
+      display: block;
+      height: 0; }
   .header--training {
     color: #FE4A00;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    display: block;
-    padding: 0.5rem 10px; }
+    padding: 0.5rem 10px;
+    display: block; }
     .header--training:hover {
       color: #FE4A00;
       text-decoration: none;
-      font-weight: 400; }
+      font-weight: bold;
+      display: block;
+      height: 0; }
   .hero__group--text h5 {
     font-family: "Lato", sans-serif;
     font-size: 50px;
