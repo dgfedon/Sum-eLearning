@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -99,7 +102,7 @@
                     <div class="carousel-inner">
 
                         <!-- IMAGEN 1 -->
-                        <div class="carousel-item active">
+                        <div class="carousel-item active img--scale">
                             <img src="assets/img/slide_sum_elearning.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <div class="hero__group">
@@ -116,7 +119,7 @@
                         </div>
 
                         <!-- IMAGEN 2 -->
-                        <div class="carousel-item">
+                        <div class="carousel-item img--scale">
                             <img src="assets/img/slide_sum_elearning2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <div class="hero__group">
@@ -133,7 +136,7 @@
                         </div>
 
                         <!-- IMAGEN 3 -->
-                        <div class="carousel-item">
+                        <div class="carousel-item img--scale">
                             <img src="assets/img/slide_sum_elearning3.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-md-block">
                                 <div class="hero__group">
@@ -175,25 +178,25 @@
                         <p class="encabezado--subtitle">En Sum e-Learning encontrarás la mejor variedad y calidad de cursos para capacitación docente del mercado.</p>
                     </div>
 
-                    <div class="benefits--group">
+                    <div class="benefits">
 
                         <!-- Beneficio 1 -->
-                        <article>
-                            <img src="assets/img/img_libertad_sum_elearning.png" alt="...">
+                        <article class="benefits--group">
+                            <figure class="libertad__img--effect"></figure>
                             <p>Libertad</p>
                             <span class="text-center">Nuestros cursos y talleres se encuentran disponibles en cualquier momento y lugar para que estudies a tu tiempo.</span>
                         </article>
 
                         <!-- Beneficio 2 -->
-                        <article>
-                            <img src="assets/img/img_certificacion_sum_elearning.png" alt="...">
+                        <article class="benefits--group">
+                            <figure class="certificacion__img--effect"></figure>
                             <p>Certificación</p>
                             <span class="text-center">Validamos tu curso con certificaciones una vez entregados los proyectos finales de cada capacitación docente.</span>
                         </article>
 
                         <!-- Beneficio 3 -->
-                        <article>
-                            <img src="assets/img/img_institucionalidad_sum_elearning.png" alt="...">
+                        <article class="benefits--group">
+                            <figure class="institucionalidad__img--effect"></figure>
                             <p>Institucionalidad</p>
                             <span class="text-center">Beneficios exclusivos para instituciones educativas que deseen contratar nuestros cursos para su staff docente.</span>
                         </article>
@@ -218,21 +221,31 @@
 
                     <div class="col-lg-12 d-lg-flex">
                         <div class="col-lg-6 methodology">
+
                             <!-- Metodología 1 -->
                             <div class="methodology--group">
-                                <h3>Estudiá a tu ritmo</h3>
+                                <div class="d-flex">
+                                    <span class="methodology--list" data-aos="zoom-in" data-aos-duration="2500"></span>
+                                    <span class="methodology--title">Estudiá a tu ritmo</span>
+                                </div>
                                 <p>¡Adquiere nuestros cursos y talles para estudiarlos en tu tiempo libre!</p>
                             </div>
     
                             <!-- Metodología 2 -->
                             <div class="methodology--group">
-                                <h3>Material descargable</h3>
+                                <div class="d-flex">
+                                    <span class="methodology--list" data-aos="zoom-in" data-aos-duration="2500"></span>
+                                    <span class="methodology--title">Material descargable</span>
+                                </div>
                                 <p>Archivos PDF disponibles para descargar y tenerlos siempre a mano.</p>
                             </div>
     
                             <!-- Metodología 3 -->
                             <div class="methodology--group">
-                                <h3>Proyecto final</h3>
+                                <div class="d-flex">
+                                    <span class="methodology--list" data-aos="zoom-in" data-aos-duration="2500"></span>
+                                    <span class="methodology--title">Proyecto final</span>
+                                </div>
                                 <p>Evaluamos tu desempeño para brindarte certificados oficiales.</p>
                             </div>
     
@@ -333,7 +346,7 @@
 
                             <!-- Curso 1 -->
                             <div class="card--group cardConfiguration" id="testing">
-                                <img src="assets/img/courses/curso1.svg" class="card-img-top" alt="...">
+                                <img src="assets/img/courses/curso1.svg" class="card-img-top card__img--effect" alt="...">
                                 <div class="card--course cursos">
                                     <div class="card--encabezado">
                                         <h5>Curso</h5>
@@ -881,13 +894,13 @@
                         <li>
                             <ul class="foo--redes">
                                 <li>
-                                    <a target="_blank" href="https://www.instagram.com/" class="nav-link">
-                                        <img src="assets/img/vector_facebook.svg" alt="...">
+                                    <a target="_blank" href="https://www.facebook.com/" class="nav-link">
+                                        <figure class="vector--facebook"></figure>
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://www.facebook.com/" class="nav-link">
-                                        <img src="assets/img/vector_instagram.svg" alt="...">
+                                    <a target="_blank" href="https://www.instagram.com/" class="nav-link">
+                                        <figure class="vector--instagram"></figure>
                                     </a>
                                 </li>
                             </ul>
@@ -922,6 +935,12 @@
 
 <!-- Script for owl -->
 <script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 <!-- JS -->
 <script src="js/main.js"></script>

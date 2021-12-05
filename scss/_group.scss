@@ -1,5 +1,5 @@
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1150px) {
     // Header
     .header--group {
         a img {
@@ -15,19 +15,18 @@
     }
 
     // Benefits
-    .benefits--group {
+    .benefits {
         margin-top: 80px;
         display: flex;
         justify-content: center;
-        article {
+        .benefits--group {
             border: none;
             margin: 10px 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            img {
-                width: 160px;
-                height: 160px;
+            figure {
+                margin: 0px;
             }
             p {
                 margin-top: 15px;
@@ -36,10 +35,52 @@
                 color: $primaryOrange;
             }
             span {
-                min-width: 340px;
+                min-width: 300px;
                 font-family: $openSans;
                 font-size: 18px;
             }
+        }
+    }
+    .libertad__img--effect {
+        background-image: url("../assets/img/img_libertad_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_libertad_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
+        }
+    }
+    .certificacion__img--effect {
+        background-image: url("../assets/img/img_certificacion_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_certificacion_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
+        }
+    }
+    .institucionalidad__img--effect {
+        background-image: url("../assets/img/img_institucional_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_institucional_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
         }
     }
 
@@ -50,9 +91,13 @@
             margin-top: 20px;
             margin-left: 40px;
             width: 450px;
-            h3 {
+            .methodology--list {
                 display: list-item;
                 list-style: '✓ ';
+                font-size: 35px;
+                color: $primaryOrange;
+            }
+            .methodology--title {
                 font-family: $lato;
                 font-size: 35px;
                 color: $primaryOrange;
@@ -126,10 +171,236 @@
             display: flex;
             align-items: center;
         }
-        .foo--redes {
+    }
+    .foo--redes {
+        figure {
+            width: 40px;
+            height: 40px;
+            margin: 0px;
+        }
+        .vector--facebook {
+            background-image: url("../assets/img/vector_facebook.svg");
+            background-position: center;
+            &:hover {
+                background-image: url("../assets/img/vector_facebook_hover.svg");
+                background-position: center;
+            }
+        }
+        .vector--instagram {
+            background-image: url("../assets/img/vector_instagram.svg");
+            background-position: center;
+            &:hover {
+                background-image: url("../assets/img/vector_instagram_hover.svg");
+                background-position: center;
+            }
+        }
+    }
+}
+
+
+// Vista intermedia
+@media only screen and (min-width:820px) and (max-width:1149px) {
+    // Header
+    .header--group {
+        a img {
+            display: flex;
+            align-items: center;
+            width: 220px;
+            height: 48px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    // Benefits
+    .benefits {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .benefits--group {
+            border: none;
+            margin: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            figure {
+                margin: 0px;
+            }
+            p {
+                margin-top: 15px;
+                font-family: $lato;
+                font-size: 30px;
+                color: $primaryOrange;
+            }
+            span {
+                min-width: 250px;
+                font-family: $openSans;
+                font-size: 18px;
+                max-width: 350px;
+            }
+        }
+    }
+    .libertad__img--effect {
+        background-image: url("../assets/img/img_libertad_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_libertad_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
+        }
+    }
+    .certificacion__img--effect {
+        background-image: url("../assets/img/img_certificacion_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_certificacion_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
+        }
+    }
+    .institucionalidad__img--effect {
+        background-image: url("../assets/img/img_institucional_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+        &:hover {
+            background-image: url("../assets/img/img_institucional_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    // Methodology
+    .methodology {
+        margin-top: 40px;
+        .methodology--group {
+            margin-top: 20px;
+            margin-left: 40px;
+            width: 400px;
+            .methodology--list {
+                display: list-item;
+                list-style: '✓ ';
+                font-size: 35px;
+                color: $primaryOrange;
+            }
+            .methodology--title {
+                font-family: $lato;
+                font-size: 35px;
+                color: $primaryOrange;
+            }
+            p {
+                font-family: $openSans;
+                font-size: 25px;
+            }
+        }
+    }
+
+    // Testimony
+    .testimony {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
+        .testimony--group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 10px;
+            border: none;
+        }
+        img {
+            margin-top: 30px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    // Form
+    .form--group {
+        margin-top: 10px;
+        min-width: 560px;
+        min-height: 360px;
+        padding: 0px 10px;
+        label {
+            font-family: $lato;
+            font-size: 15px;
+            color: $primaryBlue;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            padding: 5px 0px 5px 20px;
+            font-family: $openSans;
+            font-size: 15px;
+            color: #C0C0C0;
+            background-color: #ffffff;
+            border: 1px solid $primaryBlue;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+    }
+
+    // Footer
+    .foo--group {
+        a {
+            display: flex;
+            align-items: center;
             img {
-                width: 40px;
-                height: 40px;
+                width: 334px;
+                height: 70px;
+            }
+        }
+        ul {
+            list-style-type: none;
+        }
+        .foo--contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .foo--redes {
+        display: flex;
+        justify-content: center;
+        figure {
+            width: 40px;
+            height: 40px;
+            margin: 0px;
+        }
+        .vector--facebook {
+            background-image: url("../assets/img/vector_facebook.svg");
+            background-position: center;
+            &:hover {
+                background-image: url("../assets/img/vector_facebook_hover.svg");
+                background-position: center;
+            }
+        }
+        .vector--instagram {
+            background-image: url("../assets/img/vector_instagram.svg");
+            background-position: center;
+            &:hover {
+                background-image: url("../assets/img/vector_instagram_hover.svg");
+                background-position: center;
             }
         }
     }
@@ -138,7 +409,7 @@
 
 
 // Vista mobile
-@media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:819px) {
     // Header
     .header--group {
         a img {
@@ -154,19 +425,18 @@
     }
 
     // Benefits
-    .benefits--group {
+    .benefits {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        article {
+        .benefits--group {
             border: none;
             margin: 20px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            img {
-                width: 80px;
-                height: 80px;
+            figure {
+                margin: 0px;
             }
             p {
                 margin-top: 10px;
@@ -178,7 +448,50 @@
                 margin: 0px 20px;
                 font-family: $openSans;
                 font-size: 18px;
+                max-width: 350px;
             }
+        }
+    }
+    .libertad__img--effect {
+        background-image: url("../assets/img/img_libertad_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        &:hover {
+            background-image: url("../assets/img/img_libertad_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .certificacion__img--effect {
+        background-image: url("../assets/img/img_certificacion_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        &:hover {
+            background-image: url("../assets/img/img_certificacion_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .institucionalidad__img--effect {
+        background-image: url("../assets/img/img_institucional_sum_elearning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        &:hover {
+            background-image: url("../assets/img/img_institucional_hover.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 150px;
+            height: 150px;
         }
     }
 
@@ -186,11 +499,15 @@
     .methodology {
         .methodology--group {
             margin-top: 20px;
-            h3 {
+            .methodology--list {
                 display: list-item;
                 list-style: '✓ ';
+                font-size: 25px;
+                color: $primaryOrange;
+            }
+            .methodology--title {
                 font-family: $lato;
-                font-size: 22px;
+                font-size: 25px;
                 color: $primaryOrange;
             }
             p {
@@ -264,12 +581,33 @@
             flex-direction: column;
             align-items: center;
         }
-        .foo--redes {
-            display: flex;
-            justify-content: center;
-            img {
-                width: 50px;
-                height: 50px;
+    }
+    .foo--redes {
+        display: flex;
+        justify-content: center;
+        figure {
+            width: 50px;
+            height: 50px;
+            margin: 0px;
+        }
+        .vector--facebook {
+            background-image: url("../assets/img/vector_facebook.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            &:hover {
+                background-image: url("../assets/img/vector_facebook_hover.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .vector--instagram {
+            background-image: url("../assets/img/vector_instagram.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            &:hover {
+                background-image: url("../assets/img/vector_instagram_hover.svg");
+                background-position: center;
+                background-repeat: no-repeat;
             }
         }
     }

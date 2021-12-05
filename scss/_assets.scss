@@ -1,14 +1,4 @@
 // CARRUSEL COURSES
-// .cursos {
-//     background-color: white;
-// }
-.card{
-    border-radius: 10px;
-}
-.card-img-top{
-    height: 30vh;
-    object-fit: cover;
-}
 .owl-prev{
     left: -20px;
 }
@@ -34,7 +24,7 @@
 
 
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1150px) {
     // Hero
     .hero__group {
         height: 700px;
@@ -45,6 +35,13 @@
         div {
             margin: 20px 0px 20px 210px;
             width: 640px;
+        }
+    }
+    .img--scale {
+        transition: all 2.0s ease-in;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
         }
     }
     .carousel-item {
@@ -183,13 +180,20 @@
 
 
 // Vista mobile
-@media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:1149px) {
     // Hero
     .hero__group {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .img--scale {
+        transition: all 2.0s ease-in;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
+        }
     }
     .carousel-item {
         img {
@@ -243,7 +247,6 @@
         }
     }
 
-
     // ICON
     .icon__permanent--wa {
         position: fixed;
@@ -262,6 +265,80 @@
         height: 60px;
     }
 
+    // BTN
+    .methodology--btn {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 8px 12px;
+        color: $textWhite;
+        margin-top: 20px;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
+    .courses--btn {
+        background-color: $primaryBlue;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 16px;
+        color: $textWhite;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
+    .form__btn--submit {
+        background-color: $secondaryOrange;
+        border: none;
+        padding: 8px 12px;
+        font-family: $lato;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: $primaryBlue;
+        &:hover {
+            background-color: $primaryBlue;
+            color: $textWhite;
+        }
+    }
+}
+
+
+// Hero
+@media only screen and (min-width:920px) and (max-width:1149px) {
+    // Hero
+    .hero__group {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 150px;
+            width: 640px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 35px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 25px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
     // BTN
     .carousel__btn--courses {
         background-color: $textWhite;
@@ -282,29 +359,334 @@
             background-color: $secondaryBlue;
         }
     }
+}
+@media only screen and (min-width:865px) and (max-width:919px) {
+    // Hero
+    .hero__group {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 100px;
+            // width: ;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 35px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 25px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 5px 10px;
+        color: $primaryBlue;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
 
-    .methodology--btn {
+    .carousel__btn--inscription {
         background-color: $primaryBlue;
         border: none;
-        padding: 8px 12px;
+        padding: 5px 10px;
         color: $textWhite;
-        margin-top: 20px;
         &:hover {
             background-color: $secondaryBlue;
         }
     }
-
-    .form__btn--submit {
-        background-color: $secondaryOrange;
+}
+@media only screen and (min-width:760px) and (max-width:864px) {
+    // Hero
+    .hero__group {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 100px;
+            // width: ;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 40px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 35px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
         border: none;
-        padding: 8px 12px;
-        font-family: $lato;
-        font-size: 14px;
-        letter-spacing: 0.03em;
+        padding: 5px 10px;
         color: $primaryBlue;
         &:hover {
-            background-color: $primaryBlue;
-            color: $textWhite;
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 5px 10px;
+        color: $textWhite;
+        &:hover {
+            background-color: $secondaryBlue;
         }
     }
 }
+@media only screen and (min-width:690px) and (max-width:759px) {
+    // Hero
+    .hero__group {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 100px;
+            // width: ;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 35px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 28px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+@media only screen and (min-width:600px) and (max-width:689px) {
+    // Hero
+    .hero__group {
+        max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 100px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 30px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 25px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 5px 10px;
+        color: $primaryBlue;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 5px 10px;
+        color: $textWhite;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+}
+@media only screen and (min-width:510px) and (max-width:599px) {
+    // Hero
+    .hero__group {
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 10px 0px 10px 50px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 25px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 18px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 3px 6px;
+        color: $primaryBlue;
+        font-size: 12px;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 3px 6px;
+        color: $textWhite;
+        font-size: 12px;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+}
+@media only screen and (min-width:0px) and (max-width:509px) {
+    // Hero
+    .hero__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 5px 0px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 18px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 16px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 0px 3px;
+        color: $primaryBlue;
+        font-size: 11px;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 0px 3px;
+        color: $textWhite;
+        font-size: 11px;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+}
+
+
+// NavBar
+@media only screen and (min-width:600px) and (max-width:991px) {
+    .navbar-nav {
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .navbar-brand {
+        position: fixed;
+        top: 20px;
+        left: 40px;
+    }
+    
+    .navbar-toggler {
+        position: fixed;
+        top: 30px;
+        right: 40px;
+    }
+} 
+// NavBar
+@media only screen and (min-width:0px) and (max-width:599px) {
+    .navbar-nav {
+        position: relative;
+        top: 80px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .navbar-brand {
+        position: fixed;
+        top: 26px;
+        left: 20px;
+    }
+    
+    .navbar-toggler {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+    }
+} 

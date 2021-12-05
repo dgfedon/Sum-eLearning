@@ -1,5 +1,5 @@
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1301px) {
     .cardConfiguration{
         background-color: #FFF1E4;
         border: 1px solid $primaryBlue;
@@ -58,7 +58,7 @@
         .certificacion{
             background: #E9DBD5;
             border-radius: 10px;
-            min-height: 35px;
+            min-height: 40px;
             margin-bottom: 25px;
             li {
                 list-style-position: inside;
@@ -93,7 +93,7 @@
         li::before {
             content: "\2022";
             color: $secondaryOrange; 
-            padding-right: 10px;
+            padding-right: 6px;
             font-size: 40px;
             line-height: 2px;
             vertical-align: -8px;
@@ -105,7 +105,7 @@
         li::before {
             content: "\2022";
             color: #84DC14; 
-            padding-right: 10px;
+            padding-right: 6px;
             font-size: 40px;
             line-height: 2px;
             vertical-align: -8px;
@@ -115,12 +115,350 @@
 }
 
 
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+    .cardConfiguration{
+        background-color: #FFF1E4;
+        border: 1px solid $primaryBlue;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .card--group {
+        position: relative;
+        min-height: 800px;
+        min-width: 305px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        border-radius: 10px;
+    }
+    .card-img-top {
+        height: 130px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card--course {
+        flex: 1 1 auto;
+        padding: 1rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .card--encabezado {
+        h5 {
+            font-family: $lato;
+            font-size: 14px;
+            color: $primaryBlue;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        p {
+            font-family: $lato;
+            font-size: 30px;
+            color: $primaryBlue;
+            padding-left: 5px;
+            line-height: 30px;
+            min-width: 280px;
+            min-height: 120px;
+            margin-bottom: 10px;
+        }
+    }
+    .card--body {
+        padding-left: 5px;
+        .certificacion{
+            background: #E9DBD5;
+            border-radius: 10px;
+            min-height: 50px;
+            margin-bottom: 25px;
+            li {
+                list-style-position: inside;
+                font-family: $openSans;
+                font-size: 16px;
+                color: $primaryBlue;
+            }
+        }
+        .card--descripcion {
+            font-family: $openSans;
+            font-size: 14px;
+            text-align: justify;
+            color: $primaryBlue;
+            min-height: 180px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+    }
+    .card--caracteristicas {
+        min-height: 130px;
+        li {
+            list-style-position: inside;
+            font-family: $openSans;
+            font-size: 16px;
+            color: $primaryBlue;
+            line-height: 22px;
+        }
+    }
+
+    // Variaciones
+    .cursos {
+        li::before {
+            content: "\2022";
+            color: $secondaryOrange; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+    
+    .recursos {
+        li::before {
+            content: "\2022";
+            color: #84DC14; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+}
 
 
+@media only screen and (min-width:480px) and (max-width:999px) {
+    .cardConfiguration{
+        background-color: #FFF1E4;
+        border: 1px solid $primaryBlue;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .card--group {
+        position: relative;
+        min-height: 800px;
+        min-width: 305px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        border-radius: 10px;
+    }
+    .card-img-top {
+        height: 135px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card--course {
+        flex: 1 1 auto;
+        padding: 1rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .card--encabezado {
+        h5 {
+            font-family: $lato;
+            font-size: 14px;
+            color: $primaryBlue;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        p {
+            font-family: $lato;
+            font-size: 30px;
+            color: $primaryBlue;
+            padding-left: 5px;
+            line-height: 30px;
+            min-width: 280px;
+            min-height: 110px;
+            margin-bottom: 10px;
+        }
+    }
+    .card--body {
+        padding-left: 5px;
+        .certificacion{
+            background: #E9DBD5;
+            border-radius: 10px;
+            min-height: 40px;
+            margin-bottom: 25px;
+            li {
+                list-style-position: inside;
+                font-family: $openSans;
+                font-size: 16px;
+                color: $primaryBlue;
+            }
+        }
+        .card--descripcion {
+            font-family: $openSans;
+            font-size: 14px;
+            text-align: justify;
+            color: $primaryBlue;
+            min-height: 180px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+    }
+    .card--caracteristicas {
+        min-height: 130px;
+        li {
+            list-style-position: inside;
+            font-family: $openSans;
+            font-size: 16px;
+            color: $primaryBlue;
+            line-height: 22px;
+        }
+    }
 
+    // Variaciones
+    .cursos {
+        li::before {
+            content: "\2022";
+            color: $secondaryOrange; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+    
+    .recursos {
+        li::before {
+            content: "\2022";
+            color: #84DC14; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+}
 
 
 // Vista mobile
-// @media only screen and (min-width:0px) and (max-width:854px) {
+@media only screen and (min-width:0px) and (max-width:479px) {
+    .cardConfiguration{
+        background-color: #FFF1E4;
+        border: 1px solid $primaryBlue;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .card--group {
+        position: relative;
+        min-height: 800px;
+        min-width: 305px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px;
+        border-radius: 10px;
+    }
+    .card-img-top {
+        height: 135px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card--course {
+        flex: 1 1 auto;
+        padding: 1rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .card--encabezado {
+        h5 {
+            font-family: $lato;
+            font-size: 14px;
+            color: $primaryBlue;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        p {
+            font-family: $lato;
+            font-size: 30px;
+            color: $primaryBlue;
+            padding-left: 5px;
+            line-height: 30px;
+            min-width: 280px;
+            min-height: 110px;
+            margin-bottom: 10px;
+        }
+    }
+    .card--body {
+        padding-left: 5px;
+        .certificacion{
+            background: #E9DBD5;
+            border-radius: 10px;
+            min-height: 40px;
+            margin-bottom: 25px;
+            li {
+                list-style-position: inside;
+                font-family: $openSans;
+                font-size: 16px;
+                color: $primaryBlue;
+            }
+        }
+        .card--descripcion {
+            font-family: $openSans;
+            font-size: 14px;
+            text-align: justify;
+            color: $primaryBlue;
+            min-height: 180px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+    }
+    .card--caracteristicas {
+        min-height: 130px;
+        li {
+            list-style-position: inside;
+            font-family: $openSans;
+            font-size: 16px;
+            color: $primaryBlue;
+            line-height: 22px;
+        }
+    }
 
-// }
+    // Variaciones
+    .cursos {
+        li::before {
+            content: "\2022";
+            color: $secondaryOrange; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+    
+    .recursos {
+        li::before {
+            content: "\2022";
+            color: #84DC14; 
+            padding-right: 6px;
+            font-size: 35px;
+            line-height: 2px;
+            vertical-align: -8px;
+            padding-left: 2px;
+        }
+    }
+}
