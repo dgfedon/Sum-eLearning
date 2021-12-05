@@ -53,6 +53,8 @@
     #courses {
         min-height: 1090px;
         @include flex-colum-jc-ai-center;
+        padding-left: 10px;
+        padding-right: 30px;
     }
 
     #networking {

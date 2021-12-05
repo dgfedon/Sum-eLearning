@@ -1,10 +1,4 @@
 // CARRUSEL COURSES
-.owl-prev{
-    left: -20px;
-}
-.owl-next{
-    right: -50px;
-}
 .owl-prev, .owl-next {
     position: absolute;
     top: 200px;
@@ -25,6 +19,12 @@
 
 // Vista desktop
 @media only screen and (min-width:1150px) {
+    .owl-prev{
+        left: -20px;
+    }
+    .owl-next{
+        right: -35px;
+    }
     // Hero
     .hero__group {
         height: 700px;
@@ -181,6 +181,12 @@
 
 // Vista mobile
 @media only screen and (min-width:0px) and (max-width:1149px) {
+    .owl-prev{
+        left: -20px;
+    }
+    .owl-next{
+        right: -20px;
+    }
     // Hero
     .hero__group {
         display: flex;

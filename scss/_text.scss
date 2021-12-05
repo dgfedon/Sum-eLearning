@@ -5,28 +5,26 @@
         color: $primaryBlue;
         font-family: $lato;
         font-size: 20px;
-        padding: 0.5rem 10px;
-        display: inline-block; 
+        padding: 0px 10px;
+        border: 1px solid white;
+        display:inline-block;
         &:hover {
             color: $primaryBlue;
             text-decoration: none;
             font-weight: bold;
-            display: block;
-            height: 0;
         }
     }
     .header--training {
         color: $primaryOrange;
         font-family: $lato;
         font-size: 20px;
-        padding: 0.5rem 10px;
-        display: block; 
+        padding: 0px 10px;
+        border-left: 1px solid white;
+        display:inline-block;
         &:hover {
             color: $primaryOrange;
             text-decoration: none;
             font-weight: bold;
-            display: block;
-            height: 0;
         }
     }
 
@@ -351,6 +349,7 @@
         margin-top: 20px;
         text-align: center;
         color: $primaryBlue;
+        max-width: 700px;
     }
 
     // Methodology
