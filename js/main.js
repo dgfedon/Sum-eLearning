@@ -16,13 +16,13 @@ $(document).ready(function(){
             dots:false,
          },
          480:{
-            items:1.5,
+            items:1,
             nav:true,
             dots: false,
             margin: 30,
       },
          650:{
-            items:2,
+            items:1.5,
             nav:true,
             dots: false,
             margin: 30,

@@ -23,6 +23,9 @@
     background: #FFF1E4;
     height: 100%;
     z-index: -1; }
+  .methodology__bg--img {
+    width: 600px;
+    height: 600px; }
   .testimony__bg--color {
     background-color: #FFF1E4;
     border-radius: 0px 0px 100px 100px;
@@ -172,7 +175,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px; } }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1280px) {
   .header--nav {
     color: #000035;
     font-family: "Lato", sans-serif;
@@ -276,7 +279,7 @@
     text-align: center;
     color: white; } }
 
-@media only screen and (min-width: 855px) and (max-width: 1099px) {
+@media only screen and (min-width: 855px) and (max-width: 1279px) {
   .header--nav {
     color: #000035;
     font-family: "Lato", sans-serif;
@@ -311,7 +314,7 @@
     color: #000035; }
   .encabezado--methodology {
     font-family: "Lato", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #000035; }
   .bubble--text h5 {
     font-family: "Lato", sans-serif;
@@ -480,7 +483,7 @@
   background: #869791;
   opacity: 0; }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1300px) {
   .owl-prev {
     left: -20px; }
   .owl-next {
@@ -495,7 +498,8 @@
       margin: 20px 0px 20px 210px;
       width: 640px; }
   .img--scale {
-    transition: all 2.0s ease-in; }
+    transition: all .8s ease-in;
+    height: 580px; }
     .img--scale:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1) 0.1s; }
@@ -595,6 +599,122 @@
       background-color: #000035;
       color: #F8F8F8; } }
 
+@media only screen and (min-width: 1150px) and (max-width: 1299px) {
+  .owl-prev {
+    left: -20px; }
+  .owl-next {
+    right: -35px; }
+  .hero__group {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .hero__group div {
+      margin: 20px 0px 20px 210px;
+      width: 640px; }
+  .img--scale {
+    transition: all .8s ease-in;
+    height: 580px; }
+    .img--scale:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1) 0.1s; }
+  .carousel-item img {
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
+  .comments {
+    width: 350px;
+    height: 190px; }
+    .comments .comment {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .comments .comment p {
+        margin: 0 0 10px 0; }
+  .bubble {
+    position: relative;
+    background-color: white;
+    color: #FE4A00;
+    padding: 20px;
+    border-radius: 5px; }
+    .bubble::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -15px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid white; }
+  .bubble:hover {
+    background-color: #E77535;
+    color: white; }
+    .bubble:hover::after {
+      border-top: 15px solid #E77535; }
+  .icon__permanent--wa {
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+    border: none;
+    z-index: 100; }
+  .img--networking {
+    width: 85px;
+    height: 85px; }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    width: 220px;
+    height: 60px;
+    color: #000035; }
+    .carousel__btn--courses:hover {
+      background-color: #D4D4E4; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    width: 220px;
+    height: 60px;
+    color: #F8F8F8; }
+    .carousel__btn--inscription:hover {
+      background-color: #292960; }
+  .methodology--btn {
+    background-color: #000035;
+    border: none;
+    width: 255px;
+    height: 60px;
+    color: #F8F8F8;
+    margin-top: 10px; }
+    .methodology--btn:hover {
+      background-color: #292960; }
+  .courses--btn {
+    background-color: #000035;
+    border: none;
+    border-radius: 15px;
+    padding: 14px;
+    font-size: 18px;
+    color: #F8F8F8;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: 0.03em; }
+    .courses--btn:hover {
+      background-color: #292960; }
+  .form__btn--submit {
+    background-color: #FF792E;
+    border: none;
+    width: 120px;
+    height: 38px;
+    padding: 8px 12px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #000035; }
+    .form__btn--submit:hover {
+      background-color: #000035;
+      color: #F8F8F8; } }
+
 @media only screen and (min-width: 0px) and (max-width: 1149px) {
   .owl-prev {
     left: -20px; }
@@ -606,7 +726,7 @@
     justify-content: center;
     align-items: center; }
   .img--scale {
-    transition: all 2.0s ease-in; }
+    transition: all .8s ease-in; }
     .img--scale:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1) 0.1s; }
@@ -688,6 +808,80 @@
     .form__btn--submit:hover {
       background-color: #000035;
       color: #F8F8F8; } }
+
+@media only screen and (min-width: 1281px) {
+  .hero__group {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .hero__group div {
+      margin: 20px 0px 20px 150px;
+      width: 640px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 28px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    padding: 5px 10px;
+    color: #000035; }
+    .carousel__btn--courses:hover {
+      background-color: #D4D4E4; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    padding: 5px 10px;
+    color: #F8F8F8; }
+    .carousel__btn--inscription:hover {
+      background-color: #292960; } }
+
+@media only screen and (min-width: 1150px) and (max-width: 1280px) {
+  .hero__group {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .hero__group div {
+      margin: 20px 0px 20px 150px;
+      width: 640px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 28px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    padding: 5px 10px;
+    color: #000035; }
+    .carousel__btn--courses:hover {
+      background-color: #D4D4E4; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    padding: 5px 10px;
+    color: #F8F8F8; }
+    .carousel__btn--inscription:hover {
+      background-color: #292960; } }
 
 @media only screen and (min-width: 920px) and (max-width: 1149px) {
   .hero__group {
@@ -990,7 +1184,7 @@
     display: flex;
     align-items: center; }
   .benefits {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     justify-content: center; }
     .benefits .benefits--group {
@@ -1002,7 +1196,6 @@
       .benefits .benefits--group figure {
         margin: 0px; }
       .benefits .benefits--group p {
-        margin-top: 15px;
         font-family: "Lato", sans-serif;
         font-size: 30px;
         color: #FE4A00; }
@@ -1138,7 +1331,7 @@
     display: flex;
     align-items: center; }
   .benefits {
-    margin-top: 80px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1152,7 +1345,6 @@
       .benefits .benefits--group figure {
         margin: 0px; }
       .benefits .benefits--group p {
-        margin-top: 15px;
         font-family: "Lato", sans-serif;
         font-size: 30px;
         color: #FE4A00; }
@@ -1809,14 +2001,14 @@
     padding-top: 60px;
     padding-bottom: 60px; }
   #header {
-    min-height: 100px;
+    min-height: 10vh;
     display: flex;
     justify-content: space-around;
     background-color: white; }
   #carrusel--encabezado {
     margin-top: 100px; }
   #benefits {
-    min-height: 840px;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

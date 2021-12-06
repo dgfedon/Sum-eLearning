@@ -18,7 +18,7 @@
 
 
 // Vista desktop
-@media only screen and (min-width:1150px) {
+@media only screen and (min-width:1300px) {
     .owl-prev{
         left: -20px;
     }
@@ -38,7 +38,8 @@
         }
     }
     .img--scale {
-        transition: all 2.0s ease-in;
+        transition: all .8s ease-in;
+        height: 580px;
         &:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1) .10s;
@@ -178,6 +179,167 @@
 }
 
 
+@media only screen and (min-width:1150px) and (max-width:1299px) {
+    .owl-prev{
+        left: -20px;
+    }
+    .owl-next{
+        right: -35px;
+    }
+    // Hero
+    .hero__group {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 210px;
+            width: 640px;
+        }
+    }
+    .img--scale {
+        transition: all .8s ease-in;
+        height: 580px;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1) .10s;
+        }
+    }
+    .carousel-item {
+        img {
+            border-top: 2px solid $primaryOrange;
+            border-bottom: 2px solid $primaryOrange;
+        }
+    }
+
+    // GLOBO COMMENT
+    .comments {
+        width: 350px;
+        height: 190px;
+        .comment {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+    .bubble {
+        position: relative;
+        background-color: white;
+        color: $primaryOrange;
+        padding: 20px;
+        border-radius: 5px;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+        
+            bottom: -15px;
+        
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        
+            border-top: 15px solid white;
+        }
+    }
+
+    .bubble:hover {
+        background-color: #E77535;
+        color: white;
+        &::after {
+            border-top: 15px solid #E77535;
+        }
+    }
+
+    // ICON
+    .icon__permanent--wa {
+        position: fixed;
+        right: 20px;
+        bottom: 65px;
+        border: none;
+        z-index: 100;
+    }
+    .img--networking {
+        width: 85px;
+        height: 85px;
+    }
+
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        width: 220px;
+        height: 60px;
+        color: $primaryBlue;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        width: 220px;
+        height: 60px;
+        color: $textWhite;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
+    .methodology--btn {
+        background-color: $primaryBlue;
+        border: none;
+        width: 255px;
+        height: 60px;
+        color: $textWhite;
+        margin-top: 10px;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
+    .courses--btn {
+        background-color: $primaryBlue;
+        border: none;
+        border-radius: 15px;
+        padding: 14px;
+        font-size: 18px;
+        color: $textWhite;
+        text-align: center;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+
+    .form__btn--submit {
+        background-color: $secondaryOrange;
+        border: none;
+        width: 120px;
+        height: 38px;
+        padding: 8px 12px;
+        font-family: $lato;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: $primaryBlue;
+        &:hover {
+            background-color: $primaryBlue;
+            color: $textWhite;
+        }
+    }
+}
+
+
 
 // Vista mobile
 @media only screen and (min-width:0px) and (max-width:1149px) {
@@ -195,7 +357,7 @@
         align-items: center;
     }
     .img--scale {
-        transition: all 2.0s ease-in;
+        transition: all .8s ease-in;
         &:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1) .10s;
@@ -313,8 +475,110 @@
     }
 }
 
-
+// and (max-width:1280px)
 // Hero
+@media only screen and (min-width:1281px) {
+    // Hero
+    .hero__group {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 150px;
+            width: 640px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 40px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 28px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 5px 10px;
+        color: $primaryBlue;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 5px 10px;
+        color: $textWhite;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+}
+@media only screen and (min-width:1150px) and (max-width:1280px) {
+    // Hero
+    .hero__group {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            margin: 20px 0px 20px 150px;
+            width: 640px;
+        }
+    }
+    // Carousel
+    .hero__group--text {
+        h5 {
+            font-family: $lato;
+            font-size: 40px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        p {
+            font-family: $openSans;
+            font-size: 28px;
+            text-align: initial;
+            color: $textWhite;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    // BTN
+    .carousel__btn--courses {
+        background-color: $textWhite;
+        border: none;
+        padding: 5px 10px;
+        color: $primaryBlue;
+        &:hover {
+            background-color: #D4D4E4;
+        }
+    }
+
+    .carousel__btn--inscription {
+        background-color: $primaryBlue;
+        border: none;
+        padding: 5px 10px;
+        color: $textWhite;
+        &:hover {
+            background-color: $secondaryBlue;
+        }
+    }
+}
 @media only screen and (min-width:920px) and (max-width:1149px) {
     // Hero
     .hero__group {
@@ -662,13 +926,11 @@
         text-align: center;
         margin-bottom: 100px;
     }
-    
     .navbar-brand {
         position: fixed;
         top: 20px;
         left: 40px;
     }
-    
     .navbar-toggler {
         position: fixed;
         top: 30px;

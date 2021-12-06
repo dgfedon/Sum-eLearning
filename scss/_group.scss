@@ -16,7 +16,7 @@
 
     // Benefits
     .benefits {
-        margin-top: 80px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         .benefits--group {
@@ -29,7 +29,6 @@
                 margin: 0px;
             }
             p {
-                margin-top: 15px;
                 font-family: $lato;
                 font-size: 30px;
                 color: $primaryOrange;
@@ -216,7 +215,7 @@
 
     // Benefits
     .benefits {
-        margin-top: 80px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -231,7 +230,6 @@
                 margin: 0px;
             }
             p {
-                margin-top: 15px;
                 font-family: $lato;
                 font-size: 30px;
                 color: $primaryOrange;

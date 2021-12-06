@@ -23,7 +23,8 @@
 
     // SECCIONES
     #header {
-        min-height: 100px;
+        // min-height: 100px;
+        min-height: 10vh;
         display: flex;
         justify-content: space-around;
         background-color: white;
@@ -34,7 +35,8 @@
     }
 
     #benefits {
-        min-height: 840px;
+        // min-height: 840px;
+        min-height: 90vh;
         @include flex-colum-jc-ai-center;
     }
 
