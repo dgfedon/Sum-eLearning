@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1071px) {
   .benefits__bg--img {
     background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
     background-position: top;
@@ -60,7 +60,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px; } }
 
-@media only screen and (min-width: 855px) and (max-width: 1000px) {
+@media only screen and (min-width: 855px) and (max-width: 1070px) {
   .benefits__bg--img {
     background-image: url("../assets/img/bg_benefits_sum_elearning.jpg");
     background-position: top;
@@ -961,6 +961,25 @@
     top: 30px;
     right: 20px; } }
 
+.nav li a:link, .nav li a:visited {
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: 5px; }
+
+.nav li a:hover {
+  text-decoration: none;
+  font-weight: bold; }
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10% !important; }
+
+.container--fluid {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+
 @media only screen and (min-width: 1150px) {
   .header--group a img {
     display: flex;
@@ -1795,15 +1814,19 @@
     justify-content: space-around;
     background-color: white; }
   #carrusel--encabezado {
-    margin-top: 100px; }
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center; }
   #benefits {
-    min-height: 960px;
+    min-height: 840px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   #methodology {
-    min-height: 940px;
+    min-height: 860px;
     display: flex;
     flex-direction: column;
     justify-content: center; }

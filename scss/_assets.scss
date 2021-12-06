@@ -696,3 +696,26 @@
         right: 20px;
     }
 } 
+
+.nav li a:link, .nav li a:visited {
+    text-decoration:none;
+    margin-left:8px; 
+    margin-right:5px;
+} 
+
+.nav li a:hover{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10% !important;
+}
+
+.container--fluid {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
