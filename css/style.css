@@ -1814,11 +1814,7 @@
     justify-content: space-around;
     background-color: white; }
   #carrusel--encabezado {
-    margin-top: 100px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-content: center; }
+    margin-top: 100px; }
   #benefits {
     min-height: 840px;
     display: flex;
