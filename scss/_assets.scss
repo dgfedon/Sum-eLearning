@@ -34,10 +34,9 @@
             transform: scale(1.1) .10s;
         }
     }
-    .carousel-item {
-        img {
-            border-top: 2px solid $primaryOrange;
-        }
+    .carousel-inner {
+        border-top: 2px solid $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
     }
 
     // GLOBO COMMENT
@@ -194,10 +193,9 @@
             transform: scale(1.1) .10s;
         }
     }
-    .carousel-item {
-        img {
-            border-top: 2px solid $primaryOrange;
-        }
+    .carousel-inner {
+        border-top: 2px solid $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
     }
 
     // GLOBO COMMENT
@@ -350,10 +348,9 @@
             transform: scale(1.1) .10s;
         }
     }
-    .carousel-item {
-        img {
-            border-top: 2px solid $primaryOrange;
-        }
+    .carousel-inner {
+        border-top: 2px solid $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
     }
 
     // GLOBO COMMENT

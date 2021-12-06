@@ -494,8 +494,9 @@
     .img--scale:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1) 0.1s; }
-  .carousel-item img {
-    border-top: 2px solid #FE4A00; }
+  .carousel-inner {
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
   .comments {
     width: 350px;
     height: 190px; }
@@ -1974,7 +1975,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .contenedor--fluid {
   width: 100%;
@@ -1995,12 +1997,11 @@
   #carrusel--encabezado {
     margin-top: 100px; }
   #benefits {
-    min-height: 90vh;
+    min-height: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-top: 2px solid #FE4A00; }
+    align-items: center; }
   #methodology {
     min-height: 860px;
     display: flex;

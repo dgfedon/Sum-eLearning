@@ -9,9 +9,8 @@
         border: 1px solid white;
         display:inline-block;
         &:hover {
-            color: $primaryBlue;
             text-decoration: none;
-            font-weight: bold;
+            text-shadow: 0px 0px 1px $primaryBlue;
         }
     }
     .header--training {
@@ -22,9 +21,8 @@
         border-left: 1px solid white;
         display:inline-block;
         &:hover {
-            color: $primaryOrange;
             text-decoration: none;
-            font-weight: bold;
+            text-shadow: 0px 0px 1px $primaryOrange;
         }
     }
 
@@ -163,9 +161,8 @@
         display: block;
         padding: 0.5rem 10px;
         &:hover {
-            color: $primaryBlue;
-            font-weight: bold;
             text-decoration: none;
+            text-shadow: 0px 0px 1px $primaryBlue;
         }
     }
     .header--training {
@@ -175,9 +172,8 @@
         display: block;
         padding: 0.5rem 10px;
         &:hover {
-            color: $primaryOrange;
-            font-weight: bold;
             text-decoration: none;
+            text-shadow: 0px 0px 1px $primaryOrange;
         }
     }
 

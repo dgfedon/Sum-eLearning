@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 
 // Contenedor padre
@@ -34,9 +35,9 @@
     }
 
     #benefits {
-        min-height: 90vh;
+        min-height: 760px;
+        // min-height: 90vh;
         @include flex-colum-jc-ai-center;
-        border-top: 2px solid $primaryOrange;
     }
 
     #methodology {
