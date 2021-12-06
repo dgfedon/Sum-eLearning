@@ -23,8 +23,7 @@
 
     // SECCIONES
     #header {
-        // min-height: 100px;
-        min-height: 10vh;
+        min-height: 100px;
         display: flex;
         justify-content: space-around;
         background-color: white;
@@ -35,9 +34,9 @@
     }
 
     #benefits {
-        // min-height: 840px;
         min-height: 90vh;
         @include flex-colum-jc-ai-center;
+        border-top: 2px solid $primaryOrange;
     }
 
     #methodology {
@@ -114,6 +113,7 @@
     #benefits {
         // min-height: 960px;
         @include flex-colum-jc-ai-center;
+        border-top: 2px solid $primaryOrange;
     }
 
     #methodology {
