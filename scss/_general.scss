@@ -11,7 +11,7 @@
 }
 
 // Vista desktop
-@media only screen and (min-width:855px) {
+@media only screen and (min-width:1150px) {
     // Padding generales
     .padding-x {
         padding-right: 100px;
@@ -39,11 +39,15 @@
         @include flex-colum-jc-ai-center;
     }
     .section--benefits {
-        min-height: 80vh;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #methodology {
-        min-height: 840px;
+        min-height: 740px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -58,6 +62,88 @@
     }
     .section--testimony {
         height: 80vh;
+    }
+
+    #courses {
+        min-height: 1090px;
+        @include flex-colum-jc-ai-center;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+    #networking {
+        min-height: 410px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #form {
+        min-height: 665px;
+        @include flex-colum-jc-ai-center;
+    }
+    .section-form {
+        height: 80vh;
+    }
+
+    #footer {
+        min-height: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #copy {
+        min-height: 60px;
+        background-color: #000018;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+// Vista intermedia
+@media only screen and (min-width:850px) and (max-width:1149px) {
+    // Padding generales
+    .padding-x {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .padding-y {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    // SECCIONES
+    #header {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    #carrusel--encabezado {
+        margin-top: 100px;
+    }
+
+    #benefits {
+        min-height: 760px;
+        @include flex-colum-jc-ai-center;
+    }
+
+    #methodology {
+        min-height: 740px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .methodology__bg--img {
+        width: 600px;
+        height: 550px;
+    }
+
+    #testimony {
+        min-height: 700px;
+        @include flex-colum-jc-ai-center;
     }
 
     #courses {
@@ -123,42 +209,34 @@
     }
 
     #benefits {
-        // min-height: 960px;
         @include flex-colum-jc-ai-center;
-        border-top: 2px solid $primaryOrange;
     }
 
     #methodology {
-        // min-height: 940px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     #testimony {
-        // min-height: 800px;
         @include flex-colum-jc-ai-center;
     }
 
     #courses {
-        // min-height: 1090px;
         @include flex-colum-jc-ai-center;
     }
 
     #networking {
-        // min-height: 410px;
         @include flex-colum-jc-ai-center;
     }
 
     #form {
-        // min-height: 665px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     #footer {
-        // min-height: 160px;
         @include flex-colum-jc-ai-center;
     }
 

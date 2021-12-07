@@ -301,8 +301,7 @@
   .encabezado--subtitle {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 25px;
-    margin-top: 40px;
-    width: 730px;
+    margin-top: 20px;
     text-align: center;
     color: #000035; }
   .encabezado--methodology {
@@ -1368,23 +1367,23 @@
       width: 180px;
       height: 180px; }
   .methodology {
-    margin-top: 40px; }
+    margin-top: 10px; }
     .methodology .methodology--group {
-      margin-top: 20px;
+      margin-top: 10px;
       margin-left: 40px;
       width: 400px; }
       .methodology .methodology--group .methodology--list {
         display: list-item;
         list-style: '✓ ';
-        font-size: 35px;
+        font-size: 28px;
         color: #FE4A00; }
       .methodology .methodology--group .methodology--title {
         font-family: "Lato", sans-serif;
-        font-size: 35px;
+        font-size: 24px;
         color: #FE4A00; }
       .methodology .methodology--group p {
         font-family: "Open Sans Condensed", sans-serif;
-        font-size: 25px; }
+        font-size: 18px; }
   .testimony {
     display: flex;
     flex-direction: row;
@@ -1996,7 +1995,7 @@
   width: 100%;
   overflow-x: hidden; }
 
-@media only screen and (min-width: 855px) {
+@media only screen and (min-width: 1150px) {
   .padding-x {
     padding-right: 100px;
     padding-left: 100px; }
@@ -2017,9 +2016,13 @@
     justify-content: center;
     align-items: center; }
   .section--benefits {
-    min-height: 80vh; }
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   #methodology {
-    min-height: 840px;
+    min-height: 740px;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -2033,6 +2036,74 @@
     align-items: center; }
   .section--testimony {
     height: 80vh; }
+  #courses {
+    min-height: 1090px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px; }
+  #networking {
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #form {
+    min-height: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section-form {
+    height: 80vh; }
+  #footer {
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #copy {
+    min-height: 60px;
+    background-color: #000018;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+@media only screen and (min-width: 850px) and (max-width: 1149px) {
+  .padding-x {
+    padding-right: 100px;
+    padding-left: 100px; }
+  .padding-y {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  #header {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white; }
+  #carrusel--encabezado {
+    margin-top: 100px; }
+  #benefits {
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #methodology {
+    min-height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .methodology__bg--img {
+    width: 600px;
+    height: 550px; }
+  #testimony {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   #courses {
     min-height: 1090px;
     display: flex;
@@ -2085,8 +2156,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-top: 2px solid #FE4A00; }
+    align-items: center; }
   #methodology {
     display: flex;
     flex-direction: column;
