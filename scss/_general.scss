@@ -35,14 +35,15 @@
     }
 
     #benefits {
-        // min-height: 760px;
-        padding-top: 100px;
-        min-height: 80vh;
+        min-height: 760px;
         @include flex-colum-jc-ai-center;
+    }
+    .section--benefits {
+        min-height: 80vh;
     }
 
     #methodology {
-        min-height: 860px;
+        min-height: 840px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,7 +53,7 @@
     }
 
     #testimony {
-        min-height: 800px;
+        min-height: 700px;
         @include flex-colum-jc-ai-center;
     }
     .section--testimony {

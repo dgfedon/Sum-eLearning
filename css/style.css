@@ -1060,7 +1060,7 @@
   .carousel__btn--courses {
     background-color: #F8F8F8;
     border: none;
-    padding: 3px 6px;
+    padding: 4px 8px;
     color: #000035;
     font-size: 12px; }
     .carousel__btn--courses:hover {
@@ -1068,7 +1068,7 @@
   .carousel__btn--inscription {
     background-color: #000035;
     border: none;
-    padding: 3px 6px;
+    padding: 4px 8px;
     color: #F8F8F8;
     font-size: 12px; }
     .carousel__btn--inscription:hover {
@@ -1097,7 +1097,7 @@
   .carousel__btn--courses {
     background-color: #F8F8F8;
     border: none;
-    padding: 0px 3px;
+    padding: 4px 8px;
     color: #000035;
     font-size: 11px; }
     .carousel__btn--courses:hover {
@@ -1105,7 +1105,7 @@
   .carousel__btn--inscription {
     background-color: #000035;
     border: none;
-    padding: 0px 3px;
+    padding: 4px 8px;
     color: #F8F8F8;
     font-size: 11px; }
     .carousel__btn--inscription:hover {
@@ -1610,8 +1610,8 @@
 @media only screen and (min-width: 1301px) {
   .container--fluid {
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto; }
   .cardConfiguration {
@@ -2011,21 +2011,22 @@
   #carrusel--encabezado {
     margin-top: 100px; }
   #benefits {
-    padding-top: 100px;
-    min-height: 80vh;
+    min-height: 760px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .section--benefits {
+    min-height: 80vh; }
   #methodology {
-    min-height: 860px;
+    min-height: 840px;
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .section--methodology {
     height: 80vh; }
   #testimony {
-    min-height: 800px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
