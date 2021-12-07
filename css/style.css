@@ -588,15 +588,6 @@
     left: -20px; }
   .owl-next {
     right: -35px; }
-  .hero__group {
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .hero__group div {
-      margin: 20px 0px 20px 210px;
-      width: 640px; }
   .img--scale {
     transition: all .8s ease-in;
     height: 580px; }
@@ -794,8 +785,83 @@
       background-color: #000035;
       color: #F8F8F8; } }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1551px) {
   .hero__group {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+    .hero__group div {
+      margin: 20px 0px 20px 150px;
+      width: 640px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 28px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    padding: 5px 10px;
+    color: #000035; }
+    .carousel__btn--courses:hover {
+      background-color: #D4D4E4; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    padding: 5px 10px;
+    color: #F8F8F8; }
+    .carousel__btn--inscription:hover {
+      background-color: #292960; } }
+
+@media only screen and (min-width: 1401px) and (max-width: 1550px) {
+  .hero__group {
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+    .hero__group div {
+      margin: 20px 0px 20px 150px;
+      width: 640px; }
+  .hero__group--text h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .hero__group--text p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 28px;
+    text-align: initial;
+    color: #F8F8F8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .carousel__btn--courses {
+    background-color: #F8F8F8;
+    border: none;
+    padding: 5px 10px;
+    color: #000035; }
+    .carousel__btn--courses:hover {
+      background-color: #D4D4E4; }
+  .carousel__btn--inscription {
+    background-color: #000035;
+    border: none;
+    padding: 5px 10px;
+    color: #F8F8F8; }
+    .carousel__btn--inscription:hover {
+      background-color: #292960; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+  .hero__group {
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
