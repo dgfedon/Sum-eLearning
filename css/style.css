@@ -180,24 +180,18 @@
     color: #000035;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid white;
-    display: inline-block; }
+    padding: 0px 10px; }
     .header--nav:hover {
-      color: #000035;
       text-decoration: none;
-      font-weight: bold; }
+      text-shadow: 0px 0px 1px #000035; }
   .header--training {
     color: #FE4A00;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    padding: 0px 10px;
-    border-left: 1px solid white;
-    display: inline-block; }
+    padding: 0px 10px; }
     .header--training:hover {
-      color: #FE4A00;
       text-decoration: none;
-      font-weight: bold; }
+      text-shadow: 0px 0px 1px #FE4A00; }
   .hero__group--text h5 {
     font-family: "Lato", sans-serif;
     font-size: 50px;
@@ -284,22 +278,18 @@
     color: #000035;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    display: block;
     padding: 0.5rem 10px; }
     .header--nav:hover {
-      color: #000035;
-      font-weight: bold;
-      text-decoration: none; }
+      text-decoration: none;
+      text-shadow: 0px 0px 1px #000035; }
   .header--training {
     color: #FE4A00;
     font-family: "Lato", sans-serif;
     font-size: 20px;
-    display: block;
     padding: 0.5rem 10px; }
     .header--training:hover {
-      color: #FE4A00;
-      font-weight: bold;
-      text-decoration: none; }
+      text-decoration: none;
+      text-shadow: 0px 0px 1px #FE4A00; }
   .encabezado--title {
     font-family: "Lato", sans-serif;
     font-size: 50px;
@@ -610,8 +600,9 @@
     .img--scale:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1) 0.1s; }
-  .carousel-item img {
-    border-top: 2px solid #FE4A00; }
+  .carousel-inner {
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
   .comments {
     width: 350px;
     height: 190px; }
@@ -720,8 +711,9 @@
     .img--scale:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1) 0.1s; }
-  .carousel-item img {
-    border-top: 2px solid #FE4A00; }
+  .carousel-inner {
+    border-top: 2px solid #FE4A00;
+    border-bottom: 2px solid #FE4A00; }
   .comments {
     width: 250px; }
     .comments .comment {
@@ -1127,7 +1119,8 @@
   .navbar-toggler {
     position: fixed;
     top: 30px;
-    right: 40px; } }
+    right: 40px;
+    border: none; } }
 
 @media only screen and (min-width: 0px) and (max-width: 599px) {
   .navbar-nav {
@@ -1142,7 +1135,8 @@
   .navbar-toggler {
     position: fixed;
     top: 30px;
-    right: 20px; } }
+    right: 20px;
+    border: none; } }
 
 .nav li a:link, .nav li a:visited {
   text-decoration: none;
