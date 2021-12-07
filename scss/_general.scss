@@ -35,8 +35,9 @@
     }
 
     #benefits {
-        min-height: 760px;
-        // min-height: 90vh;
+        // min-height: 760px;
+        padding-top: 100px;
+        min-height: 80vh;
         @include flex-colum-jc-ai-center;
     }
 
@@ -46,10 +47,16 @@
         flex-direction: column;
         justify-content: center;
     }
+    .section--methodology {
+        height: 80vh;
+    }
 
     #testimony {
         min-height: 800px;
         @include flex-colum-jc-ai-center;
+    }
+    .section--testimony {
+        height: 80vh;
     }
 
     #courses {
@@ -67,6 +74,9 @@
     #form {
         min-height: 665px;
         @include flex-colum-jc-ai-center;
+    }
+    .section-form {
+        height: 80vh;
     }
 
     #footer {

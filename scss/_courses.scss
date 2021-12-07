@@ -1,5 +1,12 @@
 // Vista desktop
 @media only screen and (min-width:1301px) {
+    .container--fluid {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .cardConfiguration{
         background-color: #FFF1E4;
         border: 1px solid $primaryBlue;
@@ -116,6 +123,13 @@
 
 
 @media only screen and (min-width:1000px) and (max-width:1300px) {
+    .container--fluid {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .cardConfiguration{
         background-color: #FFF1E4;
         border: 1px solid $primaryBlue;
@@ -232,6 +246,13 @@
 
 
 @media only screen and (min-width:480px) and (max-width:999px) {
+    .container--fluid {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .cardConfiguration{
         background-color: #FFF1E4;
         border: 1px solid $primaryBlue;
@@ -349,6 +370,13 @@
 
 // Vista mobile
 @media only screen and (min-width:0px) and (max-width:479px) {
+    .container--fluid {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .cardConfiguration{
         background-color: #FFF1E4;
         border: 1px solid $primaryBlue;
@@ -449,7 +477,6 @@
             padding-left: 2px;
         }
     }
-    
     .recursos {
         li::before {
             content: "\2022";

@@ -84,25 +84,25 @@
 
     // Methodology
     .methodology {
-        margin-top: 40px;
         .methodology--group {
-            margin-top: 20px;
+            margin-top: 10px;
             margin-left: 40px;
             width: 450px;
             .methodology--list {
                 display: list-item;
                 list-style: '✓ ';
-                font-size: 35px;
+                font-size: 28px;
                 color: $primaryOrange;
             }
             .methodology--title {
                 font-family: $lato;
-                font-size: 35px;
+                font-size: 28px;
                 color: $primaryOrange;
             }
             p {
                 font-family: $openSans;
-                font-size: 25px;
+                font-size: 24px;
+                margin-bottom: 0;
             }
         }
     }
@@ -111,7 +111,7 @@
     .testimony {
         display: flex;
         justify-content: center;
-        margin-top: 60px;
+        // margin-top: 60px;
         .testimony--group {
             display: flex;
             flex-direction: column;
@@ -120,7 +120,7 @@
             border: none;
         }
         img {
-            margin-top: 30px;
+            margin-top: 20px;
             width: 80px;
             height: 80px;
         }

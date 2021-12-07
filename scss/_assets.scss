@@ -35,6 +35,7 @@
         }
     }
     .carousel-inner {
+        height: 80vh;
         border-top: 2px solid $primaryOrange;
         border-bottom: 2px solid $primaryOrange;
     }
@@ -127,7 +128,7 @@
         width: 255px;
         height: 60px;
         color: $textWhite;
-        margin-top: 40px;
+        margin-top: 10px;
         &:hover {
             background-color: $secondaryBlue;
         }
@@ -194,6 +195,7 @@
         }
     }
     .carousel-inner {
+        height: 80vh;
         border-top: 2px solid $primaryOrange;
         border-bottom: 2px solid $primaryOrange;
     }
@@ -959,12 +961,5 @@
     width: 10% !important;
 }
 
-.container--fluid {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 

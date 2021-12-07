@@ -54,8 +54,7 @@
     .encabezado--subtitle {
         font-family: $openSans;
         font-size: 25px;
-        margin-top: 40px;
-        width: 730px;
+        margin-top: 20px;
         text-align: center;
         color: $primaryBlue;
     }
@@ -63,7 +62,7 @@
     // Methodology
     .encabezado--methodology {
         font-family: $lato;
-        font-size: 50px;
+        font-size: 40px;
         color: $primaryBlue;
     }
 
@@ -119,15 +118,15 @@
     .form__group--text {
         h3 {
             font-family: $lato;
-            font-size: 38px;
+            font-size: 35px;
             color: $primaryOrange;
             text-align: center;
         }
         p {
             font-family: $openSans;
             font-size: 20px;
-            width: 490px;
-            margin-top: 30px;
+            max-width: 490px;
+            margin-top: 10px;
             color: $primaryBlue;
             text-align: center;
         }
