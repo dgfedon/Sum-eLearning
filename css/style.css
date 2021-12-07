@@ -182,6 +182,7 @@
     font-size: 20px;
     padding: 0px 10px; }
     .header--nav:hover {
+      color: #000035;
       text-decoration: none;
       text-shadow: 0px 0px 1px #000035; }
   .header--training {
@@ -190,6 +191,7 @@
     font-size: 20px;
     padding: 0px 10px; }
     .header--training:hover {
+      color: #FE4A00;
       text-decoration: none;
       text-shadow: 0px 0px 1px #FE4A00; }
   .hero__group--text h5 {
@@ -280,6 +282,7 @@
     font-size: 20px;
     padding: 0.5rem 10px; }
     .header--nav:hover {
+      color: #000035;
       text-decoration: none;
       text-shadow: 0px 0px 1px #000035; }
   .header--training {
@@ -288,6 +291,7 @@
     font-size: 20px;
     padding: 0.5rem 10px; }
     .header--training:hover {
+      color: #FE4A00;
       text-decoration: none;
       text-shadow: 0px 0px 1px #FE4A00; }
   .encabezado--title {
